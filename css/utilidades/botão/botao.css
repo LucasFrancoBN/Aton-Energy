@@ -1,0 +1,15 @@
+.botao-claro {
+  background: var(--cor-e3);
+  border: 1px solid #5bb39b;
+  border-radius: 5px;
+  color: #002620;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.botao-claro:hover,
+.botao-claro.ativo {
+  background: var(--cor-e1);
+  border: 1px solid #b1ddce;
+  color: #002620;
+}

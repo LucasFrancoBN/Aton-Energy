@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aton Energy</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/icones/Favicon.svg" type="image/x-icon">
+
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<body>
+  <header class="bg-e7">
+    <div class="container header">
+      <figure>
+        <a href="index.html">
+          <img src="./images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
+        </a>
+      </figure>
+      <nav>
+        <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
+        <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>
+          Invista <img src="./images/icones/chevron-down.svg" alt="seta">
+          <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
+            <li><a href="#">Cadastrar</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </button>
+        <ul id="menu" data-mobile="list">
+          <li class="font-1-m-b cor-e1"><a href="#">Sobre</a></li>
+          <li class="solucoes font-1-m-b cor-e1" aria-expanded="false" aria-controls="solucoes" data-dropdown>
+            Soluções
+            <ul class="dropdown bg-e4 cor-e8 sombra" id="solucoes">
+              <li class="font-1-xs"><a href="#">Energia Solar</a></li>
+              <li class="font-1-xs"><a href="#">Energia Eólica</a></li>
+              <li class="font-1-xs"><a href="#">Energia Biomassa</a></li>
+              <li class="font-1-xs"><a href="#">SmartPower</a></li>
+              <li class="font-1-xs"><a href="#">SmartGrid</a></li>
+              <li class="font-1-xs"><a href="#">Serviços de energia</a></li>
+            </ul>
+          </li>
+          <li class="font-1-m-b cor-e1"><a href="#">Preservação</a></li>
+          <li class="font-1-m-b cor-e1"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
