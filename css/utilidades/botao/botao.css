@@ -1,0 +1,31 @@
+.botao-claro {
+  background: var(--cor-e3);
+  border: 1px solid #5bb39b;
+  border-radius: 5px;
+  color: #002620;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.botao-claro:hover,
+.botao-claro.ativo {
+  background: var(--cor-e1);
+  border: 1px solid #b1ddce;
+  color: #002620;
+}
+
+.botao-escuro {
+  background: var(--cor-e7);
+  border: 1px solid #01342a;
+  border-radius: 5px;
+  color: var(--cor-e1);
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.botao-escuro:hover,
+.botao-escuro.ativo {
+  background: #096452;
+  border: 1px solid #004939;
+  color: var(--cor-branco);
+}

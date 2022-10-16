@@ -15,7 +15,9 @@
 
   --font-1-m-b: 600 1.125rem/1.5 "Poppins", sans-serif;
 
-  --font-2-m: 500 1.125rem/1.5 "Roboto", sans-serif;
+  --font-2-m: 400 1.125rem/1.5 "Roboto", sans-serif;
+
+  --font-2-m-b: 500 1.125rem/1.5 "Roboto", sans-serif;
 
   --font-1-s: 500 1rem/1.5 "Poppins", sans-serif;
 
@@ -69,6 +71,10 @@
 }
 
 .font-2-m {
+  font: var(--font-2-m);
+}
+
+.font-2-m-b {
   font: var(--font-2-m);
 }
 

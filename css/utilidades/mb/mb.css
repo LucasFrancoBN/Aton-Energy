@@ -1,0 +1,44 @@
+:root {
+  --mb-200: 200px;
+  --mb-120: 120px;
+  --mb-60: 60px;
+  --mb-24: 24px;
+  --mb-20: 20px;
+  --mb-16: 16px;
+  --mb-12: 12px;
+  --mb-8: 8px;
+  --mb-4: 4px;
+}
+
+.mb-200 {
+  margin-bottom: var(--mb-200);
+}
+
+.mb-120 {
+  margin-bottom: var(--mb-120);
+}
+
+.mb-60 {
+  margin-bottom: var(--mb-60);
+}
+
+.mb-24 {
+  margin-bottom: var(--mb-24);
+}
+.mb-20 {
+  margin-bottom: var(--mb-20);
+}
+
+.mb-16 {
+  margin-bottom: var(--mb-16);
+}
+
+.mb-12 {
+  margin-bottom: var(--mb-12);
+}
+.mb-8 {
+  margin-bottom: var(--mb-8);
+}
+.mb-4 {
+  margin-bottom: var(--mb-4);
+}

@@ -1,0 +1,10 @@
+.link {
+  color: var(--cor-e6);
+}
+.link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: inherit;
+  background-color: var(--cor-e6);
+}

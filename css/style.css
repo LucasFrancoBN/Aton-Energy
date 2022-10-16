@@ -2,8 +2,15 @@
 @import url("./container/container.css");
 @import url("./utilidades/fonts/fonts.css");
 @import url("./utilidades/cor-e-bg/cor-e-bg.css");
-@import url("./utilidades/botão/botao.css");
+@import url("./utilidades/mb/mb.css");
+@import url("./utilidades/mt/mt.css");
+@import url("./utilidades/botao/botao.css");
+@import url("./utilidades/link/link.css");
 @import url("./utilidades/sombra/sombra.css");
 @import url("./gerais/header/header.css");
 @import url("./gerais/header/dropdown.css");
 @import url("./gerais/header/menu-mobile.css");
+@import url("./gerais/footer/footer.css");
+@import url("./home/intro.css");
+@import url("./home/soluc.css");
+@import url("./home/cromoIt.css");
