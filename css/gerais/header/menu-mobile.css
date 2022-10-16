@@ -41,8 +41,8 @@
   .js [data-mobile="list"] {
     display: none;
     position: absolute;
-    right: 0.5rem;
-    top: 1.5rem;
+    right: 28px;
+    top: 96px;
     width: 110px;
     border-radius: 5px;
     padding: 48px 0 20px;
@@ -57,14 +57,7 @@
   }
 }
 
-@media (max-width: 360px) {
-  .js [data-mobile="list"] {
-    top: 104px;
-    right: 28px;
-  }
-}
-
-@media (max-width: 295px) {
+@media (max-width: 310px) {
   .js [data-mobile="list"] {
     right: 20px;
   }
