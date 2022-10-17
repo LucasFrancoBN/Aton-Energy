@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 395px) {
   .header nav [data-investir] {
     font: var(--font-1-xs-b);
     gap: 5px;
