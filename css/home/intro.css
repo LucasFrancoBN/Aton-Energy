@@ -11,6 +11,10 @@ figure img[src$="imagem-home.png"] {
 }
 
 @media (max-width: 850px) {
+  figure img[src$="imagem-home.png"] {
+    height: 250px;
+    object-position: center;
+  }
   .home-intro {
     grid-template-columns: 1fr;
     gap: 8px;
