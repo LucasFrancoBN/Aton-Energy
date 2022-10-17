@@ -1,3 +1,9 @@
+figure img[src$="imagem-home.png"] {
+  object-fit: cover;
+  width: 150%;
+  height: 100%;
+}
+
 .home-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
