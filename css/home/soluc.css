@@ -58,7 +58,12 @@
   }
 
   .home-soluc-grid::after {
-    content: "→";
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../images/icones/arrow-right.svg);
+    background-repeat: no-repeat;
     position: absolute;
     top: 150px;
     right: 30px;
