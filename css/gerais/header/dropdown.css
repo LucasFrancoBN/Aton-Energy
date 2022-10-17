@@ -41,7 +41,16 @@
   border-bottom: 10px solid var(--cor-e4);
 }
 
+.solucoes {
+  padding: 0.5rem;
+}
+
+.solucoes .dropdown li {
+  width: 100%;
+}
+
 .solucoes .dropdown a {
+  width: 100%;
   padding: 1rem;
 }
 

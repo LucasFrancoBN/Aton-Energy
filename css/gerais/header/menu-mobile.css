@@ -1,3 +1,6 @@
+.mobile-container {
+  position: relative;
+}
 [data-mobile="button"] {
   display: none;
 }
@@ -41,8 +44,8 @@
   .js [data-mobile="list"] {
     display: none;
     position: absolute;
-    right: 28px;
-    top: 96px;
+    left: 0px;
+    top: 0px;
     width: 110px;
     border-radius: 5px;
     padding: 48px 0 20px;
