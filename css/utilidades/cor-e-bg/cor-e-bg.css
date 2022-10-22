@@ -98,6 +98,10 @@
   background-color: var(--cor-branco);
 }
 
+.bg-b2 {
+  background-color: var(--cor-b2);
+}
+
 .bg-e8 {
   background-color: var(--cor-e8);
 }

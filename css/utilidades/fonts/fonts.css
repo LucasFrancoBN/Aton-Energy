@@ -23,6 +23,8 @@
 
   --font-2-s: 400 1rem/1.5 "Roboto", sans-serif;
 
+  --font-2-s-b: 500 1rem/1.5 "Roboto", sans-serif;
+
   --font-1-xs: 500 0.875rem/1.5 "Poppins", sans-serif;
 
   --font-1-xs-b: 600 0.875rem/1.5 "Poppins", sans-serif;
@@ -84,6 +86,10 @@
 
 .font-2-s {
   font: var(--font-2-s);
+}
+
+.font-2-s-b {
+  font: var(--font-2-s-b);
 }
 
 .font-1-xs {

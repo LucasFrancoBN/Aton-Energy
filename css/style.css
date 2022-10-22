@@ -10,7 +10,9 @@
 @import url("./gerais/header/dropdown.css");
 @import url("./gerais/header/menu-mobile.css");
 @import url("./gerais/footer/footer.css");
+@import url("./gerais/formularios/formulario.css");
 @import url("./home/intro.css");
 @import url("./home/soluc.css");
 @import url("./home/cromoIt.css");
+@import url("./cadastro/cadastro.css");
 @import url("./Solucoes-Especificas/solucoes-especificas.css");
