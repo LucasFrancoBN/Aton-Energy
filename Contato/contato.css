@@ -1,0 +1,32 @@
+.solucaoEspecifica{
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: -5px;
+}
+
+
+
+
+.bg-branco.sombra.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container.mb-200{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-container form div.email {
+    grid-column: 1 / -1;
+}
+
+.form-container button.botao-escuro {
+    justify-self: start;
+}
+
+@media (max-width: 700px) {
+    .form-container form.cadastro {
+    grid-template-columns: 1fr;
+    }
+} 
