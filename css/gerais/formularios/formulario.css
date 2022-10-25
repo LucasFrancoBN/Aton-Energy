@@ -12,7 +12,7 @@ input {
   padding: 6px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: none;
   border: 2px solid var(--cor-branco);
   background-color: var(--cor-branco);
