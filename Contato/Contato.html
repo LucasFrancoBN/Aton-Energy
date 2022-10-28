@@ -55,19 +55,19 @@
 </header>
 
 <h1 class="font-1-xxl mb-24 container">entre em contato<span class="cor-e4">.</span></h1>
-<article class="container mb-200 contato-grid">
-    
+<article class="container mb-200">
+    <div class="contato-grid">
         <div class="contato">
             <div class="bg-e7 contato-grid-contato sombra">
-                <h1 id="h1-contato" class="font-1-xl " style="color: #fff;">contato</h1>
+                <h1 id="h1-contato" class="font-1-xl  cor-branco">contato</h1>
 
                 <div id="contato-email">
-                    <figure><img src="../images/icones/envelope-fill.svg" alt="" id="email-contato"></figure>
-                <P class="font-2-l" style="color: #fff;"> contato@atonenergy.br  </p>
+                    <figure><img src="../images/icones/envelope-fill.svg" alt="" width="50" height="50" id="email-contato"></figure>
+                <P class="font-2-l cor-branco"> contato@atonenergy.br  </p>
                 </div>  
                 <div id="contato-telefone">   
                     <figure> <img src="../images/icones/telephone-fill.svg" alt=""> </figure>
-                    <p class="font-2-l" style="color: #fff;"> (11)4077-5892 </p>  
+                    <p class="font-2-l cor-branco"> (11)4077-5892 </p>  
                 </div>  
 
                     <div class="icones">
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <div class="bg-branco sombra ">
+        <div class="bg-branco sombra contato-form">
             <h1 id="h1-duvida" class="font-1-l mb-12">mande a sua dúvida</h1>
         <form action="" class="form-container">
         <div class="mb-16">
@@ -92,41 +92,43 @@
         </div>
         <div class="mb-24">
             <label class="font-2-m mb-4" for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem" class="bg-b2 font-2-s" placeholder="Descreva a sua solicitação"></textarea>
         </div>
         <button class="botao-escuro font-2-s" type="submit">Enviar</button>
         </form  >
         </div>
+        
+    </div>
 </article>
 
 <h1 class="font-1-xxl mb-24 container">loja fisica<span class="cor-e4">.</span></h1>
 <section class="container mb-200 loja-grid">
-    <div class="sombra">
-        <img src="../images/localização/loc.svg" alt="" id="map">
-    </div>
+    <figure class="sombra">
+            <img src="../images/localização/loc.svg" alt="" class="map">
+    </figure>
 
         <div class="bg-branco sombra ">
 
-            <div id="estado" class="font-2-m">
-            <h3 class="font-1-xl">Estado</h3>
+            <div id="estado" class="contato-loja-desc">
+            <h3 class="font-1-xl contato-loja-titulo mb-8">Estado</h3>
             <p class="font-2-m">São Paulo</p>
             </div>
 
-            <div id="cep">
-            <h3 class="font-1-xl">CEP</h3>
+            <div id="cep" class="contato-loja-desc">
+            <h3 class="font-1-xl contato-loja-titulo mb-8">CEP</h3>
             <p class="font-2-m">01502-001</p>
             </div>
 
-            <div id="endereco">
-            <h3 class="font-1-xl">Endereço</h3>
+            <div id="endereco" class="contato-loja-desc">
+            <h3 class="font-1-xl contato-loja-titulo mb-8">Endereço</h3>
             <p class="font-2-m">Avenida da Liberdade, 532 - Liberdade</p>
             </div>
 
-            <div id="horario">
-            <h3 class="font-1-xl">Horário de funcionamento</h3>
-            <p class="font-2-m">Segunda a sexta - 07h00 - 22h40 </p>
-            <p class="font-2-m">Sabádo - 07h00 - 22h40 </p>
-            <p class="font-2-m">Domingo e feriados - fechado</p>
+            <div id="horario" class="contato-loja-desc">
+            <h3 class="font-1-xl contato-loja-titulo mb-8">Horário de funcionamento</h3>
+            <p class="font-2-m mb-4">Segunda a sexta - 07h00 - 22h40 </p>
+            <p class="font-2-m mb-4">Sabádo - 07h00 - 22h40 </p>
+            <p class="font-2-m mb-4">Domingo e feriados - fechado</p>
             </div>
         </div>
     </div>

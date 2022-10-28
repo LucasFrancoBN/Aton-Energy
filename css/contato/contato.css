@@ -8,6 +8,10 @@
     height: 100%;
 }
 
+.contato-form {
+    width: 100%
+}
+
 .icones {
 display: flex;
 align-items: center;
@@ -35,8 +39,7 @@ gap: 17px;
 
 #email-contato {
   /* define o tamanho do icone email */
-width: 50px;
-height: 50px;
+  max-width: none;
 }
 
 .contato h1,
@@ -57,17 +60,28 @@ grid-template-columns: 1fr 1fr;
 gap: 0;
 }
 
-#map {
+.map {
 width: 100%;
-height: 100%;
+height:100%;
+object-fit: cover;
 }
 
-h3::before {
+.contato-loja-titulo {
+    display: flex;
+    align-items: center;
+}
+
+.contato-loja-titulo::before {
 content: "";
 display: inline-block;
 background-color: var(--cor-e4);
-width: 7px;
-height: 16px;
+width: 6px;
+height: 18px;
+margin-right: 4px;
+}
+
+.contato-loja-desc p{
+    margin-left: 10px;
 }
 
 #estado,
@@ -82,11 +96,6 @@ padding: 32px;
 display: inline-block;
 }
 
-.container.mb-200 {
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-
 .form-container form div.email {
 grid-column: 1 / -1;
 }
@@ -95,8 +104,8 @@ grid-column: 1 / -1;
 justify-self: start;
 }
 
-@media (max-width: 700px) {
-.form-container form.cadastro {
-    grid-template-columns: 1fr;
-}
+@media(max-width: 780px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
 }

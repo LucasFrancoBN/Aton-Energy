@@ -5,7 +5,7 @@
 label {
   display: block;
 }
-input {
+input, textarea {
   display: block;
   width: 100%;
   border: 2px solid var(--cor-b3);
