@@ -1,4 +1,4 @@
-figure img[src$="imagem-home.png"] {
+figure img[src$="imagem-home.webp"] {
   object-fit: cover;
   width: 150%;
   height: 100%;

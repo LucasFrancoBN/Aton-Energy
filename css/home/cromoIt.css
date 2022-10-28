@@ -1,7 +1,9 @@
 .cromoIt {
   height: 600px;
-  background-image: url(../../images/home-images/cromo-it.png);
+  background-image: url(../../images/home-images/cromo-it.webp);
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cromoIt-desc {
