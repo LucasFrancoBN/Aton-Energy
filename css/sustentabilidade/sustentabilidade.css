@@ -1,0 +1,121 @@
+.sust-tit{
+    gap: 40px;
+    padding-left: 216px;
+    padding-right: 216px;
+}
+
+.sust-instal{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 32px; 
+    padding-left: 216px;
+    padding-right: 216px;
+    
+}
+
+.sust-frt{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-left: 216px;
+    padding-right: 216px;
+    padding-top:80px;
+   
+    
+}
+
+.sust-pessoas{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-left: 216px;
+    padding-right: 216px;
+    padding-top:80px;
+    padding-bottom: 200px;
+   
+    
+}
+
+
+@media (max-width: 870px){
+    .sust-tit, .sust-instal, .sust-frota, .sust-pessoas{
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+    .img-sust-instal, .sust-frota,  .img-sust-pessoas {
+        max-width: none;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    .sust-frota, .img-sust-frota {
+       padding-bottom: 410px;
+    }
+
+    .sust-pessoas{
+        padding-bottom: 200px;
+    }
+    
+    
+}
+
+@media (max-width: 750px){
+    .sust-tit, .sust-instal, .sust-frt, .sust-pessoas{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 32px 16px;
+    }
+    .img-sust-instal, .img-sust-frota, .img-sust-pessoas {
+       
+       width: 110%;
+      
+    }
+
+    .sust-frt{
+        display:flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+     .img-sust-frota{
+       order: 2;
+            
+    }
+
+   .sust-pessoas{
+    margin-top:-420px;
+    margin-bottom: 200px;
+   }
+}
+
+
+   @media (max-width: 460px){
+    .sust-tit, .sust-instal, .sust-frt, .sust-pessoas{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 32px 16px;
+    }
+    .img-sust-instal, .img-sust-frota, .img-sust-pessoas {
+       
+       width: 90%;
+    }
+
+    .sust-frt{
+        display:flex;
+        flex-direction: column;
+        margin-top: -100px;
+    }
+
+     .img-sust-frota{
+       order: 2;
+            
+    }
+
+   .sust-pessoas{
+    margin-top:-420px;
+    margin-bottom: -20px;
+   }
+   }
