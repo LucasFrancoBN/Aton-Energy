@@ -1,0 +1,43 @@
+
+.empresa {
+    display: flex;
+    
+}
+
+.empresa figure {
+    display: flex;
+}
+
+.empresa p {
+    max-width: 70ch;
+}
+
+.mvv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+}
+
+.mvv p {
+    max-width: 70ch;
+}
+.mvv li {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+.ods {
+    display: flex;
+}
+
+.ods .desenvolvimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desenvolvimento-pontos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
