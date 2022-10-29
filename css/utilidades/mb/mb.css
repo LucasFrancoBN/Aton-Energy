@@ -2,6 +2,7 @@
   --mb-200: 200px;
   --mb-120: 120px;
   --mb-60: 60px;
+  --mb-40: 40px;
   --mb-24: 24px;
   --mb-20: 20px;
   --mb-16: 16px;
@@ -20,6 +21,10 @@
 
 .mb-60 {
   margin-bottom: var(--mb-60);
+}
+
+.mb-40 {
+  margin-bottom: var(--mb-40);
 }
 
 .mb-24 {
