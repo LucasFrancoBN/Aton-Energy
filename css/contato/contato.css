@@ -25,7 +25,7 @@ max-width: 50px;
 max-height: 50px;
 }
 
-.bg-branco.sombra.form-container {
+.duvida-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
@@ -88,21 +88,21 @@ margin-right: 4px;
     margin-left: 10px;
 }
 
-#estado,
-#cep,
-#endereco,
-#horario {
+#contato-estado,
+#contato-cep,
+#contato-endereco,
+#contato-horario {
 padding: 32px;
 }
 
-#cep,
-#estado {
+#contato-cep,
+#contato-estado {
 display: inline-block;
 }
 
-.form-container form div.email {
+/*.form-container form div.email {
 grid-column: 1 / -1;
-}
+}*/
 
 .form-container button.botao-escuro {
 justify-self: start;
