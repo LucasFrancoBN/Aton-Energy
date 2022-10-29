@@ -5,14 +5,14 @@
 label {
   display: block;
 }
-input, textarea {
+input, textarea, select {
   display: block;
   width: 100%;
   border: 2px solid var(--cor-b3);
   padding: 6px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
   border: 2px solid var(--cor-branco);
   background-color: var(--cor-branco);
