@@ -21,8 +21,8 @@ padding: 40px;
 }
 
 .icones img {
-width: 50px;
-height: 50px;
+max-width: 50px;
+max-height: 50px;
 }
 
 .bg-branco.sombra.form-container {
@@ -30,8 +30,12 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 }
 
-#contato-telefone,
-#contato-email {
+.contato-meios figure img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.contato-meios {
 padding: 40px;
 display: flex;
 gap: 17px;
@@ -108,4 +112,28 @@ justify-self: start;
     .contato-grid {
         grid-template-columns: 1fr;
     }
+
+    .loja-grid{
+        grid-template-columns: 1fr;
+    }
 }
+
+@media (max-width: 430px){
+
+
+    .contato-meios{
+        font: var(--font-2-s);
+        padding: 20px;
+    }
+
+    #email-contato, img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icones img {
+        width: 45px;
+        height: 45px;
+        }
+}
+
