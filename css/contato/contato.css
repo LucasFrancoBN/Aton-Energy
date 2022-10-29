@@ -137,3 +137,38 @@ justify-self: start;
         }
 }
 
+@media (max-width: 380px){
+    .contato-meios{
+        font: var(--font-2-xs);
+        padding: 10px;  
+    }
+
+    #email-contato, img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .icones img {
+        width: 40px;
+        height: 40px;
+        }
+}
+
+
+@media (max-width: 365px){
+
+    .h1-contato-contato, .h1-loja, .h1-contato, .contato-loja-titulo{
+        font: var(--font-1-l);
+    }
+
+    .contato-meios{
+        font: var(--font-1-xs);
+        padding: 10px;  
+    }
+
+    #contato-estado, #contato-cep, #contato-endereco, #contato-horario, h3{
+        font: var(--font-1-l);
+    }
+
+}
+
