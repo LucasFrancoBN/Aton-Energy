@@ -22,10 +22,6 @@
     flex-direction: row;
 }
 
-.paines-solucao img {
-    /* max-width: 100%; */
-
-}
 
 .sE-gridFoot-solucao-Desc p {
     margin-bottom: 10px;
@@ -43,10 +39,7 @@
         object-fit: cover;
         object-position: right;
     }
-    .paines-solucao hr {
-        /* display: none; */
-    }
-    
+   
 }
 
 @media(max-width: 750px) {
