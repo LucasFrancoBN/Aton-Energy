@@ -20,6 +20,12 @@
   position: relative;
 }
 
+.header nav [data-dropdown] li,
+.header nav ul a {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 850px) {
   .header nav,
   .header nav ul {
