@@ -1,44 +1,44 @@
 .contato-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
 }
 
 .contato-grid .contato-grid-contato {
-    height: 100%;
+  height: 100%;
 }
 
 .contato-form {
-    width: 100%
+  width: 100%;
 }
 
 .icones {
-display: flex;
-align-items: center;
-justify-content: left;
-gap: 48px;
-padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 48px;
+  padding: 40px;
 }
 
 .icones img {
-max-width: 50px;
-max-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .duvida-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contato-meios figure img{
-    max-width: 50px;
-    max-height: 50px;
+.contato-meios figure img {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .contato-meios {
-padding: 40px;
-display: flex;
-gap: 17px;
+  padding: 40px;
+  display: flex;
+  gap: 17px;
 }
 
 #email-contato {
@@ -48,56 +48,56 @@ gap: 17px;
 
 .contato h1,
 #h1-duvida {
-padding-top: 20px;
-margin: 0;
-margin-left: 40px;
+  padding-top: 20px;
+  margin: 0;
+  margin-left: 40px;
 }
 
 #mensagem {
-width: 100%;
-height: 150px;
+  width: 100%;
+  height: 150px;
 }
 
 .loja-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
 }
 
 .map {
-width: 100%;
-height:100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contato-loja-titulo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contato-loja-titulo::before {
-content: "";
-display: inline-block;
-background-color: var(--cor-e4);
-width: 6px;
-height: 18px;
-margin-right: 4px;
+  content: "";
+  display: inline-block;
+  background-color: var(--cor-e4);
+  width: 6px;
+  height: 18px;
+  margin-right: 4px;
 }
 
-.contato-loja-desc p{
-    margin-left: 10px;
+.contato-loja-desc p {
+  margin-left: 10px;
 }
 
 #contato-estado,
 #contato-cep,
 #contato-endereco,
 #contato-horario {
-padding: 32px;
+  padding: 32px;
 }
 
 #contato-cep,
 #contato-estado {
-display: inline-block;
+  display: inline-block;
 }
 
 /*.form-container form div.email {
@@ -105,84 +105,87 @@ grid-column: 1 / -1;
 }*/
 
 .form-container button.botao-escuro {
-justify-self: start;
+  justify-self: start;
 }
 
-@media(max-width: 780px) {
-    .contato-grid {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 780px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .loja-grid{
-        grid-template-columns: 1fr;
-    }
+  .loja-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
+  .contato-meios {
+    font: var(--font-2-s);
+    padding: 20px;
+  }
 
-
-    .contato-meios{
-        font: var(--font-2-s);
-        padding: 20px;
-    }
-
-    #email-contato, img{
+  /* #email-contato, img{
         width: 40px;
         height: 40px;
-    }
+    } */
 
-    .icones img {
-        width: 45px;
-        height: 45px;
-        }
+  .icones img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
-@media (max-width: 380px){
-    .contato-meios{
-        font: var(--font-2-xs);
-        padding: 10px;  
-    }
+@media (max-width: 380px) {
+  .contato-meios {
+    font: var(--font-2-xs);
+    padding: 10px;
+  }
 
-    #email-contato, #telefone-contato{
-        width: 20px;
-        height: 20px;
-    }
+  #email-contato,
+  #telefone-contato {
+    width: 20px;
+    height: 20px;
+  }
 
-    .icones img, .contato-meios figure img{
-        width: 40px;
-        height: 40px;
-        }
+  .icones img,
+  .contato-meios figure img {
+    width: 40px;
+    height: 40px;
+  }
 
-    .contato-telefone, .contato-email{
-        font: var(--font-1-m);
-    }
+  .contato-telefone,
+  .contato-email {
+    font: var(--font-1-m);
+  }
 }
 
+@media (max-width: 365px) {
+  .h1-contato-contato,
+  .h1-loja,
+  .h1-contato,
+  .contato-loja-titulo {
+    font: var(--font-1-l);
+  }
 
-@media (max-width: 365px){
+  .contato-meios {
+    font: var(--font-1-xs);
+    padding: 10px;
+  }
 
-    .h1-contato-contato, .h1-loja, .h1-contato, .contato-loja-titulo{
-        font: var(--font-1-l);
-    }
+  #contato-estado,
+  #contato-cep,
+  #contato-endereco,
+  #contato-horario {
+    font: var(--font-1-l);
+  }
 
-    .contato-meios{
-        font: var(--font-1-xs);
-        padding: 10px;  
-    }
+  #h1-duvida,
+  .h1-contato-contato {
+    margin-left: 0px;
+  }
 
-    #contato-estado, #contato-cep, #contato-endereco, #contato-horario, h3{
-        font: var(--font-1-l);
-    }
-
-    #h1-duvida, .h1-contato-contato{
-        margin-left: 0px;
-    }
-
-    .icones img {
-        width: 35px;
-        height: 35px;
-        }
-}       
-
-
-
+  .icones img {
+    width: 35px;
+    height: 35px;
+  }
+}
