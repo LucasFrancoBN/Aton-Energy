@@ -4,12 +4,17 @@
   gap: 0;
 }
 
-.contato-grid .contato-grid-contato {
+/* .contato-grid .contato-grid-contato {
   height: 100%;
 }
 
 .contato-form {
   width: 100%;
+} */
+
+.contato-grid-contato {
+  height: 100%;
+  padding: 20px 40px;
 }
 
 .icones {
@@ -17,12 +22,12 @@
   align-items: center;
   justify-content: left;
   gap: 48px;
-  padding: 40px;
+  /* padding: 40px; */
 }
 
 .icones img {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .duvida-grid {
@@ -36,8 +41,9 @@
 }
 
 .contato-meios {
-  padding: 40px;
+  /* padding: 40px; */
   display: flex;
+  align-items: center;
   gap: 17px;
 }
 
@@ -46,12 +52,12 @@
   max-width: none;
 }
 
-.contato h1,
+/* .contato h1,
 #h1-duvida {
-  padding-top: 20px;
-  margin: 0;
-  margin-left: 40px;
-}
+  /* padding-top: 20px; */
+  /* margin: 0; */
+  /* margin-left: 40px; 
+} */
 
 #mensagem {
   width: 100%;
@@ -88,12 +94,12 @@
   margin-left: 10px;
 }
 
-#contato-estado,
+/*#contato-estado,
 #contato-cep,
 #contato-endereco,
 #contato-horario {
-  padding: 32px;
-}
+   padding: 32px; 
+}*/
 
 #contato-cep,
 #contato-estado {
@@ -119,9 +125,12 @@ grid-column: 1 / -1;
 }
 
 @media (max-width: 430px) {
+.contato-grid-contato{
+  padding: 20px;
+}
+
   .contato-meios {
     font: var(--font-2-s);
-    padding: 20px;
   }
 
   /* #email-contato, img{
@@ -136,9 +145,11 @@ grid-column: 1 / -1;
 }
 
 @media (max-width: 380px) {
+
   .contato-meios {
-    font: var(--font-2-xs);
-    padding: 10px;
+    font: var(--font-2-xxxs);
+    word-break: break-all;
+    align-items: baseline;   
   }
 
   #email-contato,
@@ -179,7 +190,7 @@ grid-column: 1 / -1;
     font: var(--font-1-l);
   }
 
-  #h1-duvida,
+ 
   .h1-contato-contato {
     margin-left: 0px;
   }

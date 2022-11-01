@@ -1,8 +1,11 @@
 :root {
   --mb-200: 200px;
   --mb-120: 120px;
+  --mb-100: 100px;
   --mb-60: 60px;
+  --mb-48: 48px;
   --mb-40: 40px;
+  --mb-32: 32px;
   --mb-24: 24px;
   --mb-20: 20px;
   --mb-16: 16px;
@@ -18,15 +21,24 @@
 .mb-120 {
   margin-bottom: var(--mb-120);
 }
+.mb-100 {
+  margin-bottom: var(--mb-100);
+}
 
 .mb-60 {
   margin-bottom: var(--mb-60);
+}
+.mb-48 {
+  margin-bottom: var(--mb-48);
 }
 
 .mb-40 {
   margin-bottom: var(--mb-40);
 }
 
+.mb-32 {
+  margin-bottom: var(--mb-32);
+}
 .mb-24 {
   margin-bottom: var(--mb-24);
 }
