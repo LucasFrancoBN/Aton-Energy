@@ -43,10 +43,17 @@
 }
 
 @media(max-width: 750px) {
+
+.SE-Main-descricao{
+    font: var(--font-2-m);
+}
+
+
     .solucaoEspecifica-grid {
         grid-template-columns: repeat(3, 320px);
         gap: 20px;
         overflow-y: scroll;
+
     }
 
     .servicos-titulo {
