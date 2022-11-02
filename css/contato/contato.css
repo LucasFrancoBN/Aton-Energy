@@ -3,15 +3,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 0;
 }
-
-/* .contato-grid .contato-grid-contato {
-  height: 100%;
-}
-
-.contato-form {
-  width: 100%;
-} */
-
 .contato-grid-contato {
   height: 100%;
   padding: 20px 40px;
@@ -22,7 +13,6 @@
   align-items: center;
   justify-content: left;
   gap: 48px;
-  /* padding: 40px; */
 }
 
 .icones img {
@@ -41,7 +31,6 @@
 }
 
 .contato-meios {
-  /* padding: 40px; */
   display: flex;
   align-items: center;
   gap: 17px;
@@ -51,13 +40,6 @@
   /* define o tamanho do icone email */
   max-width: none;
 }
-
-/* .contato h1,
-#h1-duvida {
-  /* padding-top: 20px; */
-  /* margin: 0; */
-  /* margin-left: 40px; 
-} */
 
 #mensagem {
   width: 100%;
@@ -94,24 +76,20 @@
   margin-left: 10px;
 }
 
-/*#contato-estado,
-#contato-cep,
-#contato-endereco,
-#contato-horario {
-   padding: 32px; 
-}*/
-
 #contato-cep,
 #contato-estado {
   display: inline-block;
+  padding-right: 100px;
 }
-
-/*.form-container form div.email {
-grid-column: 1 / -1;
-}*/
 
 .form-container button.botao-escuro {
   justify-self: start;
+}
+
+
+.loja-grid-end{
+    height: 100%;
+    padding: 60px 60px;
 }
 
 @media (max-width: 780px) {
@@ -133,14 +111,21 @@ grid-column: 1 / -1;
     font: var(--font-2-s);
   }
 
-  /* #email-contato, img{
-        width: 40px;
-        height: 40px;
-    } */
-
   .icones img {
     width: 45px;
     height: 45px;
+  }
+
+  .loja-grid-end{
+    padding: 40px;
+  }
+
+
+  #contato-estado,
+  #contato-cep,
+  #contato-endereco,
+  #contato-horario {
+    font: var(--font-1-l);
   }
 }
 
@@ -183,14 +168,6 @@ grid-column: 1 / -1;
     padding: 10px;
   }
 
-  #contato-estado,
-  #contato-cep,
-  #contato-endereco,
-  #contato-horario {
-    font: var(--font-1-l);
-  }
-
- 
   .h1-contato-contato {
     margin-left: 0px;
   }
