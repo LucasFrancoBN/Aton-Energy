@@ -177,3 +177,16 @@
     height: 35px;
   }
 }
+
+@media (max-width: 320px){
+  .h1-contato-contato, .h1-loja{
+    padding: 10px;
+    margin: 14px;
+  }
+
+  .loja-grid-end{
+    padding: 20px;
+  }
+
+
+}
