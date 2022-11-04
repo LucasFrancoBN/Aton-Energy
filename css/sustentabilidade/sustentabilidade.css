@@ -26,19 +26,24 @@
 }
 
 .sust-pessoas{
-    display:grid;
+  /*  display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding-left: 216px;
     padding-right: 216px;
     padding-top:80px;
     padding-bottom: 200px;
-   
-    
+      */
+}
+
+.sust-esp{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
 
-@media (max-width: 870px){
+@media (max-width: 920px){
     .sust-tit, .sust-instal, .sust-frota, .sust-pessoas{
         flex-direction: column;
         padding: 32px 16px;
@@ -46,19 +51,20 @@
     .img-sust-instal, .sust-frota,  .img-sust-pessoas {
         max-width: none;
         width: 100%;
-        height: 350px;
+        
         object-fit: cover;
         object-position: right;
     }
 
-    .sust-frota, .img-sust-frota {
-       padding-bottom: 410px;
-    }
+    
 
     .sust-pessoas{
         padding-bottom: 200px;
     }
     
+    .sust-esp p{
+        font: var(--font-2-m);
+    }
     
 }
 
