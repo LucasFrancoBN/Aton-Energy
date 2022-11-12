@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#044F40">
   <title>Aton Energy</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/public/assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -27,8 +27,8 @@
       <nav>
         <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="../images/icones/chevron-down.svg" alt="seta">
           <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
-            <li><a href="#">Cadastrar</a></li>
-            <li><a href="./login.html">Login</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
         </button>
         <div class="mobile-container">
@@ -56,29 +56,21 @@
 
   <article class="container mb-200">
     <div class="bg-branco sombra form-container">
-      <h1 class="font-1-l mb-12">cadastrar</h1>
-      <form class="cadastro" action="">
+      <h1 class="font-1-l mb-12">login</h1>
+      <form class="" action="/login" method="post">
         <div class="mb-16">
-          <label class="font-2-m mb-4" for="nome">Nome</label>
-          <input class="bg-b2 font-2-s" type="text" name="nome" id="nome" required placeholder="Nome">
-        </div>
-        <div class="mb-16">
-          <label class="font-2-m mb-4" for="sobrenome">Sobrenome</label>
-          <input class="bg-b2 font-2-s" type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome">
-        </div>
-        <div class="mb-16 email">
           <label class="font-2-m mb-4" for="email">Email</label>
-          <input class="bg-b2 font-2-s" type="email" name="email" id="email" required placeholder="seuemail@email.com">
-        </div>
-        <div class="mb-16">
-          <label class="font-2-m mb-4" for="senha">Senha</label>
-          <input class="bg-b2 font-2-s" type="password" name="senha" id="senha" required placeholder="Senha">
+          <input class="bg-b2 font-2-s" type="email" name="email" id="email" placeholder="seuemail@email.com">
         </div>
         <div class="mb-24">
-          <label class="font-2-m mb-4" for="confirm-senha">Confirme sua senha</label>
-          <input class="bg-b2 font-2-s" type="password" name="confirm-senha" id="confirm-senha" required placeholder="Senha">
+          <label class="font-2-m mb-4" for="password">Senha</label>
+          <input class="bg-b2 font-2-s" type="password" name="password" id="password" placeholder="Senha">
         </div>
-        <button class="botao-escuro font-2-s" type="submit">Cadastrar</button>
+
+        <div class="form-links">
+          <a class="link font-2-s-b" href="/cadastro">Cadastro</a>
+          <button class="botao-escuro font-2-s" type="submit">login</button>
+        </div>
       </form>
     </div>
   </article>
