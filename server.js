@@ -13,6 +13,11 @@ const methodOverride = require ("method-override")
 //const Sequelize = require('sequelize')
 //const Post = require ('./models/Post')
 
+
+
+
+
+
 initializePassport(
     passport,
     email => users.find(user => user.email === email),
