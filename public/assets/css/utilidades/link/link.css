@@ -1,5 +1,6 @@
 .link {
   color: var(--cor-e6);
+  text-transform: uppercase;
 }
 .link::after {
   content: "";

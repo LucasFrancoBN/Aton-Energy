@@ -10,8 +10,8 @@ const initializePassport = require("./passport-config")
 const flash = require ("express-flash")
 const session = require ("express-session")
 const methodOverride = require ("method-override")
-//const Sequelize = require('sequelize')
-//const Post = require ('./models/Post')
+const Sequelize = require('sequelize')
+const Post = require ('./models/pedidos')
 
 
 
@@ -78,13 +78,13 @@ app.get('/home', checkNotAuthenticated, function(req, res){
 })
 //Rota Index
 app.get('/', checkAuthenticated, (req, res) =>{
-    res.render("teste.ejs", {name: req.user.name})
+    res.render("usuario.ejs", {name: req.user.name})
 })
 
-//Rota Cadastro
-// app.get('/cadastro', checkAuthenticated, (req, res) =>{
-//     res.render("cadastro.ejs", {name: req.user.name})
-// })
+//Rota orcamento
+app.get('/orcamento', checkAuthenticated, (req, res) =>{
+    res.render("orcamento.ejs", {name: req.user.name})
+})
 
 //Rota Login
 app.get('/login', checkNotAuthenticated, (req, res)=>{
@@ -98,17 +98,15 @@ app.get('/cadastro', checkNotAuthenticated, (req, res)=>{
 app.get('/contato', checkNotAuthenticated, (req, res)=>{
     res.render("Contato.ejs")
 })
-//Rota de orçamento
-app.get('/orcamento', checkNotAuthenticated, (req, res)=>{
-    res.render("orcamento.ejs")
-})
 //Fim Rotas
 
 //Inserção de Dados na tabela postagem
 app.post('/add', function(req, res){
     Post.create({
-        titulo: req.body.titulo,
-        conteudo: req.body.conteudo
+        cidade: req.body.cidade,
+        estado: req.body.estado,
+        servico: req.body.servicos,
+        descricao: req.body.descricao
     }).then(function(){
         res.redirect('/')
     }).catch(function(){

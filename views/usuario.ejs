@@ -31,50 +31,27 @@
                 </a>
             </figure>
             <nav>
-                <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false"
-                    aria-controls="investir" data-dropdown>Invista <img src="../images/icones/chevron-down.svg"
-                        alt="seta">
-                    <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
-                        <li><a href="/paginas-cadastro/cadastro.html">Cadastrar</a></li>
-                        <li><a href="/paginas-cadastro/login.html">Login</a></li>
-                    </ul>
-                </button>
-                <div class="mobile-container">
-                    <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu"
-                        data-mobile="button">Menu</button>
-                    <ul id="menu" data-mobile="list">
-                        <li class="font-1-m-b cor-e1"><a href="/sobre/sobre.html">Sobre</a></li>
-                        <li class="solucoes font-1-m-b cor-e1" aria-expanded="false" aria-controls="solucoes"
-                            data-dropdown>
-                            Soluções
-                            <ul class="dropdown bg-e4 cor-e8 sombra" id="solucoes">
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Energia-Solar.html">Energia
-                                        Solar</a></li>
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Energia-Eolica.html">Energia
-                                        Eólica</a></li>
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Energia-Biomassa.html">Energia
-                                        Biomassa</a></li>
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Smart-Power.html">SmartPower</a>
-                                </li>
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Smart-Grid.html">SmartGrid</a></li>
-                                <li class="font-1-xs"><a href="/Solucoes-Especificas/Serviços-Energia.html">Serviços de
-                                        energia</a></li>
-                            </ul>
-                        </li>
-                        <li class="font-1-m-b cor-e1"><a href="/sustentabilidade/sustentabilidade.html">Preservação</a>
-                        </li>
-                        <li class="font-1-m-b cor-e1"><a href="Contato.html">Contato</a></li>
-                    </ul>
-                </div>
+                <form action="/logout?_method=DELETE" method="post">
+                    <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+                </form>
             </nav>
         </div>
     </header>
 
-<h1>Teste login </h1>
+    <section class="container">
+        <div class="descricao-usuario">
+            <h1 class="font-1-xxl mb-8"> Olá, <%= name %> </h1>
+            <p class="font-2-m mb-16">Aqui é sua área restrita.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Index</a></li>
+                <li><a class="link font-2-s-b" href="/posts">Posts</a></li>
+                <li><a class="link font-2-s-b" href="/orcamento">cadastro</a></li>
+            </ul>
+        </nav>
+    </section>
 
-<form action="/logout?_method=DELETE" method="post">
-    <button type="submit">Sair</button>
-</form>
 
     <footer class="bg-e7">
         <figure class="container mb-8"><img src="../images/Logo/logo.svg" alt="" width="158" height="66"></figure>
