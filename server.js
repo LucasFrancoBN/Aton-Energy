@@ -41,7 +41,7 @@ app.use(methodOverride("_method"))
 
 //Processo de Login
 app.post("/login", checkNotAuthenticated, passport.authenticate("local", {
-    successRedirect: "/",
+    successRedirect: "/usuario",
     failureRedirect: "/login",
     failureFlash: true
 }))
@@ -76,8 +76,8 @@ app.get('/home', checkNotAuthenticated, function(req, res){
         res.render("home.ejs", {posts:posts})
     })
 })
-//Rota Index
-app.get('/', checkAuthenticated, (req, res) =>{
+//Rota Usuario
+app.get('/usuario', checkAuthenticated, (req, res) =>{
     res.render("usuario.ejs", {name: req.user.name})
 })
 
@@ -98,6 +98,38 @@ app.get('/cadastro', checkNotAuthenticated, (req, res)=>{
 app.get('/contato', checkNotAuthenticated, (req, res)=>{
     res.render("Contato.ejs")
 })
+
+
+//Rota de index
+app.get('/', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/index.html")
+})
+
+//Rota de soluções Especifica
+app.get('/biomassa', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Energia-Biomassa.html")
+})
+
+app.get('/eolica', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Energia-Eolica.html")
+})
+
+app.get('/solar', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Energia-Solar.html")
+})
+
+app.get('/servicosEnergia', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Serviços-Energia.html")
+})
+
+app.get('/smartGrid', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Smart-Grid.html")
+})
+
+app.get('/smartPower', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/Solucoes-Especificas/Smart-Power.html")
+})
+
 //Fim Rotas
 
 //Inserção de Dados na tabela postagem
@@ -108,7 +140,7 @@ app.post('/add', function(req, res){
         servico: req.body.servicos,
         descricao: req.body.descricao
     }).then(function(){
-        res.redirect('/')
+        res.redirect('/usuario')
     }).catch(function(){
         res.send("Houve um erro!")
     })
@@ -127,7 +159,7 @@ app.get('/deletar/:id', function(req, res){
 app.delete("/logout", (req, res) =>{
     req.logout(req.user, err =>{
         if(err) return next(err)
-        res.redirect("/login")
+        res.redirect("/")
     })
 })
 

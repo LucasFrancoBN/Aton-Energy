@@ -38,9 +38,11 @@
         </div>
     </header>
 
+
+
+
     <section class="container mb-200">
-        <div class="descricao-usuario">
-            <h1 class="font-1-xxl mb-8"> Olá, <%= name %> </h1>
+        <div class="descricao-usuario">        
             <p class="font-2-m mb-16">Aqui é sua área restrita.</p>
         </div>
         <nav>
@@ -51,6 +53,21 @@
             </ul>
         </nav>
     </section>
+
+
+
+    <% for (var i =0;posts.length > i; i++){ %>
+    <section class="mb-60"> 
+         <p><%= posts[i].cidade %></p>
+         <p><%= posts[i].estado %></p>
+         <p><%= posts[i].servico %></p>
+         <p><%= posts[i].descricao %></p>
+    </section> 
+ 
+    <a href="/deletar/<%=posts[i].id%>"><button>Deletar</button></a>
+    <% } %> 
+
+
 
 
     <footer class="bg-e7">

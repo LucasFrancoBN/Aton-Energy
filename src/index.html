@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <!-- link favicon -->
-  <link rel="shortcut icon" href="./images/icones/Favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./public/assets/images/icones/Favicon.svg" type="image/x-icon">
 
   <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -29,14 +29,14 @@
     <div class="container header">
       <figure>
         <a href="index.html">
-          <img src="./images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
+          <img src="./public/assets/images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
         </a>
       </figure>
       <nav>
-        <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="./images/icones/chevron-down.svg" alt="seta" width="20" height="20">
+        <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="./public/assets/images/icones/chevron-down.svg" alt="seta" width="20" height="20">
           <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
-            <li><a href="./paginas-cadastro/cadastro.html">Cadastrar</a></li>
-            <li><a href="./paginas-cadastro/login.html">Login</a></li>
+            <li><a href="/cadastro">Cadastrar</a></li>
+            <li><a href="/login">Login</a></li>
           </ul>
         </button>
         <div class="mobile-container">
@@ -46,12 +46,12 @@
             <li class="solucoes font-1-m-b cor-e1" aria-expanded="false" aria-controls="solucoes" data-dropdown>
               Soluções
               <ul class="dropdown bg-e4 cor-e8 sombra" id="solucoes">
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Energia-Solar.html">Energia Solar</a></li>
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Energia-Eolica.html">Energia Eólica</a></li>
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Energia-Biomassa.html">Energia Biomassa</a></li>
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Smart-Power.html">SmartPower</a></li>
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Smart-Grid.html">SmartGrid</a></li>
-                <li class="font-1-xs"><a href="./Solucoes-Especificas/Serviços-Energia.html">Serviços de Energia</a></li>
+                <li class="font-1-xs"><a href="/solar">Energia Solar</a></li>
+                <li class="font-1-xs"><a href="/eolica">Energia Eólica</a></li>
+                <li class="font-1-xs"><a href="/biomassa">Energia Biomassa</a></li>
+                <li class="font-1-xs"><a href="/smartPower">SmartPower</a></li>
+                <li class="font-1-xs"><a href="/smartGrid">SmartGrid</a></li>
+                <li class="font-1-xs"><a href="/servicosEnergia">Serviços de Energia</a></li>
               </ul>
             </li>
             <li class="font-1-m-b cor-e1"><a href="./sustentabilidade/sustentabilidade.html">Preservação</a></li>
@@ -61,7 +61,7 @@
       </nav>
     </div>
   </header>
-  <figure class="mb-120"><img src="./images/home-images/imagem-home.webp" alt="" width="1600" height="440"></figure>
+  <figure class="mb-120"><img src="./public/assets/images/home-images/imagem-home.webp" alt="" width="1600" height="440"></figure>
   <h1 class="container font-1-xxl mb-24 home-intro-title">transformar o mundo com energia sustentável<span class="cor-e4">.</span></h1>
   <section class="container home-intro mb-200">
     <div class="home-intro-desc">
@@ -70,13 +70,13 @@
       </p>
       <a href="./sobre/sobre.html" class="link font-2-l-b">Saiba Mais</a>
     </div>
-    <figure><img src="./images/home-images/image 7.webp" alt="" width="560" height="360"></figure>
+    <figure><img src="./public/assets/images/home-images/image 7.webp" alt="" width="560" height="360"></figure>
   </section>
   <article class="home-soluc mb-200">
     <h1 class="font-1-xxl mb-60 container">soluções sustentáveis<span class="cor-e4">.</span></h1>
     <div class="home-soluc-grid container-b">
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/energia-solar.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/energia-solar.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">Energia Solar</h2>
           <p class="font-2-m cor-branco mb-16">Oferemos serviços de dimensionamento, instalação e armazenamento de sistema de captação de energia solar.</p>
@@ -84,7 +84,7 @@
         </div>
       </div>
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/energia-eolica.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/energia-eolica.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">Energia Eólica</h2>
           <p class="font-2-m cor-branco mb-16">Serviços de dimensiomanento, instalação e armazenamento de energia eólica residencial e para PMEs.</p>
@@ -92,7 +92,7 @@
         </div>
       </div>
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/energia-biomassa.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/energia-solar.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">Energia Biomassa</h2>
           <p class="font-2-m cor-branco mb-16">Sistema de captação, transformação, distribuíção e armazenamento de energia proveniente de biomassa.</p>
@@ -100,7 +100,7 @@
         </div>
       </div>
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/smart-power.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/smart-power.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">SmartPower</h2>
           <p class="font-2-m cor-branco mb-16">Sistema de alimentação inteligente com controle luminoso, acionamento por movimento, app mobile e assistente virtual. </p>
@@ -108,7 +108,7 @@
         </div>
       </div>
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/smart-grid.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/smart-grid.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">SmartGrid</h2>
           <p class="font-2-m cor-branco mb-16">Integração entre sistemas de captação energética para garantir maiores índices de eficiência e aproveitamento.</p>
@@ -116,7 +116,7 @@
         </div>
       </div>
       <div class="home-soluc-solucao bg-e8 sombra">
-        <figure class="mb-20"><img src="./images/home-images/solucoes/servicos-energia.webp" alt="" width="356" height="198"></figure>
+        <figure class="mb-20"><img src="./public/assets/images/home-images/solucoes/servicos-energia.webp" alt="" width="356" height="198"></figure>
         <div class="home-soluc-solucao-desc">
           <h2 class="font-1-xl cor-branco mb-12">Serviços de Energia</h2>
           <p class="font-2-m cor-branco mb-16">Consultoria técnica especializada para entender suas necessidades e prover soluções energéticas limpas e eficazes.</p>
@@ -133,7 +133,7 @@
     </div>
   </article>
   <footer class="bg-e7">
-    <figure class="container mb-8"><img src="./images/Logo/logo.svg" alt="" width="158" height="66"></figure>
+    <figure class="container mb-8"><img src="./public/assets/images/Logo/logo.svg" alt="" width="158" height="66"></figure>
     <div class="footer container">
       <div class="footer-somos">
         <div class="footer-somos-desc">
@@ -145,26 +145,26 @@
         <h1 class="font-1-xxl mb-12 cor-e1">Contatos</h1>
         <ul>
           <li class="mb-16"><a href="#">
-              <figure><img src="./images/icones/linkedin.svg" alt="" width="36" height="36"></figure>
+              <figure><img src="./public/assets/images/icones/linkedin.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">LinkedIn</p>
             </a></li>
           <li class="mb-16"><a href="#">
-              <figure><img src="./images/icones/envelope-fill.svg" alt="" width="36" height="36"></figure>
+              <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">atonenergy@ind.br</p>
             </a></li>
           <li class="mb-16"><a href="#">
-              <figure><img src="./images/icones/facebook.svg" alt="" width="36" height="36"></figure>
+              <figure><img src="./public/assets/images/icones/facebook.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">Aton Energy</p>
             </a></li>
           <li class="mb-16"><a href="#">
-              <figure><img src="./images/icones/instagram.svg" alt="" width="36" height="36"></figure>
+              <figure><img src="./public/assets/images/icones/instagram.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">Aton Energy</p>
             </a></li>
         </ul>
       </div>
     </div>
   </footer>
-  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="/public/assets/js/script.js"></script>
 </body>
 
 </html>

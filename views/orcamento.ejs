@@ -33,29 +33,17 @@
         </a>
       </figure>
       <nav>
-        <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="/public/assets/images/icones/chevron-down.svg" alt="seta" width="20" height="20">
-          <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
-            <li><a href="#">Cadastrar</a></li>
-            <li><a href="#">Login</a></li>
+       
           </ul>
         </button>
         <div class="mobile-container">
           <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
           <ul id="menu" data-mobile="list">
-            <li class="font-1-m-b cor-e1"><a href="#">Sobre</a></li>
-            <li class="solucoes font-1-m-b cor-e1" aria-expanded="false" aria-controls="solucoes" data-dropdown>
-              Soluções
-              <ul class="dropdown bg-e4 cor-e8 sombra" id="solucoes">
-                <li class="font-1-xs"><a href="Energia-Solar.html">Energia Solar</a></li>
-                <li class="font-1-xs"><a href="Energia-Eolica.html">Energia Eólica</a></li>
-                <li class="font-1-xs"><a href="Energia-Biomassa.html">Energia Biomassa</a></li>
-                <li class="font-1-xs"><a href="Smart-Power.html">SmartPower</a></li>
-                <li class="font-1-xs"><a href="Smart-Grid.html">SmartGrid</a></li>
-                <li class="font-1-xs"><a href="Serviços-Energia.html">Serviços de energia</a></li>
-              </ul>
-            </li>
-            <li class="font-1-m-b cor-e1"><a href="#">Preservação</a></li>
-            <li class="font-1-m-b cor-e1"><a href="#">Contato</a></li>
+            <li class="font-1-m-b cor-e1"><a href="/usuario">Home</a></li>
+            <li class="font-1-m-b cor-e1"><a href="/contato">Contato</a></li>
+            <form action="/logout?_method=DELETE" method="post">
+              <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+             </form>
           </ul>
         </div>
       </nav>
@@ -158,7 +146,7 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="../js/script.js"></script>
+  <script type="module" src="/public/assets/js/script.js"></script>
 </body>
 
 </html>
