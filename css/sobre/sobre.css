@@ -35,11 +35,14 @@
   flex-direction: column;
   align-items: center;
   background-color: #003a2e;
+  border-radius: 4px;
+  padding: 0px 0px 20px 0px;
 }
 
 .desenvolvimento-pontos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 span {
@@ -58,5 +61,9 @@ span {
   }
   .empresa figure {
     display: none;
+  }
+  .mvv {
+    display: flex;
+    flex-direction: column;
   }
 }
