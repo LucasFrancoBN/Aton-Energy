@@ -130,6 +130,11 @@ app.get('/smartPower', checkNotAuthenticated, (req, res)=>{
     res.sendFile(__dirname + "/src/Solucoes-Especificas/Smart-Power.html")
 })
 
+//Rota Preservação(sustentabilidade)
+app.get('/preservacao', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/sustentabilidade.html")
+})
+
 //Fim Rotas
 
 //Inserção de Dados na tabela postagem
