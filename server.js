@@ -99,10 +99,14 @@ app.get('/contato', checkNotAuthenticated, (req, res)=>{
     res.render("Contato.ejs")
 })
 
-
 //Rota de index
 app.get('/', checkNotAuthenticated, (req, res)=>{
     res.sendFile(__dirname + "/src/index.html")
+})
+
+//Rota sobre
+app.get('/sobre', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/sobre.html")
 })
 
 //Rota de soluções Especifica
