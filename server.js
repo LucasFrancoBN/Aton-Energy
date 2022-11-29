@@ -139,6 +139,11 @@ app.get('/preservacao', checkNotAuthenticated, (req, res)=>{
     res.sendFile(__dirname + "/src/sustentabilidade.html")
 })
 
+//Rota confirmado o envio de e-mail
+app.get('/confirmado', checkNotAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/confirmarEnvio.html")
+})
+
 //Fim Rotas
 
 //Inserção de Dados na tabela postagem

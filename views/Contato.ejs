@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="/public/assets/icones/Favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/images/icones/Favicon.svg" type="image/x-icon">
 
     <script>document.documentElement.classList.add("js")</script>
 </head>
@@ -57,14 +57,14 @@
                 <div class="bg-e7 contato-grid-contato sombra">
                     <h1 id="h1-contato" class="font-1-xl  cor-branco mb-24">contato</h1>
 
-                    <div class="contato-meios mb-24">
+                    <div class="contato-meios mb-24" >
                         <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt="" width="50" height="50"
                                 id="email-contato"></figure>
-                        <P class="font-2-l cor-branco contato-email"> contato@atonenergy.br </p>
+                        <a class="font-2-l cor-branco contato-email" href="mailto:aton.energy@hotmail.com"> aton.energy@hotmail.com </a>      
                     </div>
                     <div class="contato-meios mb-48">
                         <figure> <img src="/public/assets/images/icones/telephone-fill.svg" alt="" id="telefone-contato"> </figure>
-                        <p class="font-2-l cor-branco contato-telefone"> (11)4077-5892 </p>
+                        <a class="font-2-l cor-branco contato-telefone" href="tel:+551140775892"> (11)4077-5892 </a>
                     </div>
 
                     <div class="icones mb-48">
@@ -75,10 +75,10 @@
 
                 </div>
             </div>
-
+           
             <div class="bg-branco sombra contato-form contato-grid-contato">
                 <h1 id="h1-duvida" class="font-1-l mb-12 ">mande a sua dúvida</h1>
-                <form action="" class="">
+                <form action="https://formsubmit.co/aton.energy@hotmail.com" method="post" class="">
                     <div class="mb-16">
                         <label class="font-2-m mb-4" for="nome">Nome</label>
                         <input class="bg-b2 font-2-s" type="name" name="nome" id="nome" required placeholder="nome">
@@ -93,6 +93,8 @@
                         <textarea name="mensagem" id="mensagem" class="bg-b2 font-2-s"
                             placeholder="Descreva a sua solicitação"></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://localhost:8081/confirmado">
                     <button class="botao-escuro font-2-s" type="submit">Enviar</button>
                 </form>
             </div>
