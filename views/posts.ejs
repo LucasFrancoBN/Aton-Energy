@@ -31,6 +31,12 @@
                 </a>
             </figure>
             <nav>
+                <ul>
+                    <li><a class="font-1-m-b cor-e1" href="/usuario">Home</a></li>
+                    <li><a class="font-1-m-b cor-e1" href="/orcamento">Cadastro</a></li>
+                    <li><a class="font-1-m-b cor-e1" href="/contate">Contato</a></li>
+                </ul>
+
                 <form action="/logout?_method=DELETE" method="post">
                     <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
                 </form>
@@ -38,35 +44,41 @@
         </div>
     </header>
 
-
-
-
-    <section class="container mb-200">
-        <div class="descricao-usuario">        
-            <p class="font-2-m mb-16">Aqui é sua área restrita.</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="link font-2-s-b mb-8" href="/usuario">Home</a></li>
-                <li><a class="link font-2-s-b mb-8" href="/posts">Posts</a></li>
-                <li><a class="link font-2-s-b" href="/orcamento">cadastro</a></li>
-            </ul>
-        </nav>
-    </section>
-
-
-
     <% for (var i =0;posts.length > i; i++){ %>
-    <section class="mb-60"> 
-         <p><%= posts[i].cidade %></p>
-         <p><%= posts[i].estado %></p>
-         <p><%= posts[i].servico %></p>
-         <p><%= posts[i].descricao %></p>
+        <% var j = i; %> 
+    <section class="mb-60 container"> 
+        <div class="sombra border-radius">
+            <div class="bg-e7 cor-branco posts-container-titulo">
+                <h2 class="font-1-l posts-titulo">orçamento <%=j+1%></h2>
+            </div>
+            <div class="bg-branco posts-container">
+                <form class="posts-formulario" action="/deletar/<%=posts[i].id%>">
+                    <div>
+                        <p class="font-2-m">Cidade</p>
+                        <input class="bg-b2 font-2-m" value="<%= posts[i].cidade %>" disabled>
+                    </div>
+                    
+                    <div>
+                        <p class="font-2-m">Estado</p>
+                        <input class="bg-b2 font-2-m" value="<%= posts[i].estado %>" disabled>
+                    </div>
+                    
+                    <div class="posts-form-servico">
+                        <p class="font-2-m">Serviço</p>
+                        <input class="bg-b2 font-2-m" value="<%= posts[i].servico %>" disabled>
+                    </div>
+                    
+                    <div class="posts-form-mensagem">
+                        <p class="font-2-m">Mensagem</p>
+                        <textarea class="bg-b2 font-2-m" disabled> <%= posts[i].descricao %> </textarea>
+                    </div>
+                    <a class="botao-escuro font-2-s posts-botao-deletar" href="/deletar/<%=posts[i].id%>"><button>Deletar</button></a>
+                </form>
+            </div>    
+         </div>
     </section> 
  
-    <a href="/deletar/<%=posts[i].id%>"><button>Deletar</button></a>
-    <% } %> 
-
+    <% } %>
 
 
 

@@ -6,6 +6,7 @@
 @import url("./utilidades/botao/botao.css");
 @import url("./utilidades/link/link.css");
 @import url("./utilidades/sombra/sombra.css");
+@import url("./utilidades/border-radius/border-radius.css");
 @import url("./gerais/header/header.css");
 @import url("./gerais/header/dropdown.css");
 @import url("./gerais/header/menu-mobile.css");
@@ -20,4 +21,4 @@
 @import url("./sustentabilidade/sustentabilidade.css");
 @import url("./sobre/sobre.css");
 @import url("./orcamento/orcamento.css");
-
+@import url("./posts/posts.css");
