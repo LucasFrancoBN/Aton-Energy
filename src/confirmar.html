@@ -26,32 +26,22 @@
     <header class="bg-e7 mb-120">
         <div class="container header">
             <figure>
-                <a href="/usuario">
+                <a href="/">
                     <img src="/public/assets/images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
                 </a>
             </figure>
             <nav>
-                <ul>
-                    <li class="font-1-m-b cor-e1"><a href="/contate">Contato</a></li>
-                </ul>
-                <form action="/logout?_method=DELETE" method="post">
-                    <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+                <form href="/contato" method="post">         
+                    <ul class="font-1-m-b cor-e1 botao-claro sombra"><a href="/usuario">Home</a></ul>
                 </form>
             </nav>
         </div>
     </header>
 
-    <section class="container mb-200">
-        <div class="descricao-usuario">
-            <h1 class="font-1-xxl mb-8"> Olá, <%= name %> </h1>
-            <p class="font-2-m mb-16">Aqui é sua área restrita.</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a class="link font-2-s-b mb-8" href="/posts">Orçamentos</a></li>
-                <li><a class="link font-2-s-b" href="/orcamento">Solicite seu orçamento</a></li>
-            </ul>
-        </nav>
+
+    <section class="container mb-200">      
+     <h1 class="font-1-xxl mb-8" >Obrigado pelo envio.</h1>
+     <p class="font-1-m-b">Recebemos o seu contato com sucesso. Assim que possivel um de nossos técnicos te retornará o contato.</p>
     </section>
 
 

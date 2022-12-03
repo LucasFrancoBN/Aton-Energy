@@ -148,6 +148,10 @@ app.get('/confirmado', checkNotAuthenticated, (req, res)=>{
     res.sendFile(__dirname + "/src/confirmarEnvio.html")
 })
 
+app.get('/concluido', checkAuthenticated, (req, res)=>{
+    res.sendFile(__dirname + "/src/confirmar.html")
+})
+
 //Fim Rotas
 
 //Inserção de Dados na tabela postagem
