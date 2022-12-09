@@ -14,10 +14,6 @@ const Sequelize = require('sequelize')
 const Post = require ('./models/pedidos')
 
 
-
-
-
-
 initializePassport(
     passport,
     email => users.find(user => user.email === email),
