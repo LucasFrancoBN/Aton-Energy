@@ -25,6 +25,11 @@
     grid-column: 1 / -1;
 }
 
+.posts-text-area{
+        width: 100%;
+        height: 120px;
+}
+
 .posts-botao-deletar{
     grid-column: 2;
     justify-self: end;

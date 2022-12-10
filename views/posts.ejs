@@ -49,7 +49,7 @@
     <section class="mb-60 container"> 
         <div class="sombra border-radius">
             <div class="bg-e7 cor-branco posts-container-titulo">
-                <h2 class="font-1-l posts-titulo">orçamento <%=j+1%></h2>
+                <h2 class="font-1-l cor-branco posts-titulo">orçamento <%=j+1%></h2>
             </div>
             <div class="bg-branco posts-container">
                 <form class="posts-formulario" action="/deletar/<%=posts[i].id%>">
@@ -70,7 +70,7 @@
                     
                     <div class="posts-form-mensagem">
                         <p class="font-2-m">Mensagem</p>
-                        <textarea class="bg-b2 font-2-m" disabled> <%= posts[i].descricao %> </textarea>
+                        <textarea style="resize: vertical" class="bg-b2 font-2-m posts-text-area" disabled> <%= posts[i].descricao %> </textarea>
                     </div>
                     <a class="botao-escuro font-2-s posts-botao-deletar" href="/deletar/<%=posts[i].id%>"><button>Deletar</button></a>
                 </form>
@@ -99,10 +99,10 @@
                         <figure><img src="/public/assets/images/icones/linkedin.svg" alt=""></figure>
                         <p class="font-2-l cor-branco">LinkedIn</p>
                       </a></li>
-                    <li class="mb-16"><a href="#">
+                      <li class="mb-16"><a href="mailto:aton.energy@hotmail.com">
                         <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt=""></figure>
-                        <p class="font-2-l cor-branco">atonenergy2ind.br</p>
-                      </a></li>
+                        <p class="font-2-l cor-branco">aton.energy@hotmail.com</p>
+                    </a></li>
                     <li class="mb-16"><a href="#">
                         <figure><img src="/public/assets/images/icones/facebook.svg" alt=""></figure>
                         <p class="font-2-l cor-branco">Aton Energy</p>
