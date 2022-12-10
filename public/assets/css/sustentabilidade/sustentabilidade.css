@@ -7,23 +7,12 @@
   width: 100%;
 }
 
-.sust-pessoas {
-  /*  display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding-left: 216px;
-    padding-right: 216px;
-    padding-top:80px;
-    padding-bottom: 200px;
-      */
-}
-
 .conteudo {
   display: grid;
   grid-template-areas:
-    "img-sust-instal texto1"
-    "texto2 img-sust-frota"
-    "img-sust-pessoas texto3";
+    "img-sust-instal    texto1"
+    "texto2             img-sust-frota"
+    "img-sust-pessoas   texto3";
   gap: 40px;
 }
 
@@ -34,7 +23,7 @@
   grid-area: texto1;
 }
 .conteudo .img-sust-frot {
-  grid-area: img-sust-frot;
+  grid-area: img-sust-frota;
 }
 .conteudo .texto2 {
   grid-area: texto2;
@@ -44,6 +33,11 @@
 }
 .conteudo .texto3 {
   grid-area: texto3;
+}
+
+.img-sust-frota img {
+  object-fit: fill;
+  width: 100%;
 }
 
 @media (max-width: 700px) {

@@ -110,3 +110,9 @@
 .font-2-xxxs {
   font: var(--font-2-xxxs);
 }
+
+@media (max-width: 850px) {
+  .font-1-titulo {
+    font: var(--font-1-xxl);
+  }
+}
