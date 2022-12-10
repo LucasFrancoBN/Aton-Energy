@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "Chico",
+  "author": "Aton Energy",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

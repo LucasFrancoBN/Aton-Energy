@@ -13,7 +13,7 @@
   <!-- Title -->
   <title>Aton Energy</title>
   <!-- Link css -->
-  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <link rel="stylesheet" href="/public/assets/css/style.min.css">
   <!-- Link font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +33,8 @@
         </a>
       </figure>
       <nav>
-       
-          </ul>
+
+        </ul>
         </button>
         <div class="mobile-container">
           <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
@@ -44,75 +44,75 @@
             <li><a class="font-1-m-b cor-e1" href="/posts">Orçamentos</a></li>
             <form action="/logout?_method=DELETE" method="post">
               <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
-             </form>
+            </form>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-    <section class="container mb-200">
-        <h1 class="font-1-xxl mb-16 orcamento-titulo">solicite um orçamento<span class="cor-e4">.</span></h1>
-        <div class="orcamento bg-branco">
-            <figure><img src="/public/assets/images/orcamento/pexels-los-muertos-crew-8853537 1.jpg" alt=""></figure>
-            <div class="form-container">
-                <h2 class="font-1-l mb-12 orcamento-subtitulo">solicite um orcamento e #SejaAton<span class="cor-e4">.</span></h2>
-                <form action="/add" method="post" class="orcamento-form">
-                    <div class="mb-16 orcamento-cidade">
-                        <label class="font-2-m mb-4" for="cidade">Cidade</label>
-                        <input class="bg-b2 font-2-s" type="text" name="cidade" id="cidade" placeholder="Cidade" required>
-                    </div>
-                    <div class="mb-16 orcamento-estado">
-                        <label class="font-2-m mb-4" for="estado">Estado</label>
-                        <select id="estadof" name="estado" class="bg-b2 font-2-s" required>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                    </div>
-                    <div class="mb-16 orcamento-servicos">
-                        <label class="font-2-m mb-4" for="servicos">Qual serviço você deseja adquirir?</label>
-                        <select class="bg-b2 font-2-s" name="servicos" id="servicos" required>
-                            <option value="energia-solar">Energia Solar</option>
-                            <option value="energia-eolica">Energia Eólica</option>
-                            <option value="energia-biomassa">Biomassa</option>
-                            <option value="smart-power">Smart Power</option>
-                            <option value="smart-grid">Smart Grid</option>
-                            <option value="servicos-energia">Serviços de Energia</option>
-                        </select>
-                    </div>
-                    <div class="mb-16 orcamento-descricao">
-                        <label class="font-2-m mb-4" for="descricao">Descrição</label>
-                        <textarea class="bg-b2 font-2-s" name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva sua necessidade aqui"></textarea>
-                    </div>
-                    <button type="submit" class="botao-escuro font-1-xs">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <section class="container mb-200">
+    <h1 class="font-1-xxl mb-16 orcamento-titulo">solicite um orçamento<span class="cor-e4">.</span></h1>
+    <div class="orcamento bg-branco">
+      <figure><img src="/public/assets/images/orcamento/pexels-los-muertos-crew-8853537 1.jpg" alt=""></figure>
+      <div class="form-container">
+        <h2 class="font-1-l mb-12 orcamento-subtitulo">solicite um orcamento e #SejaAton<span class="cor-e4">.</span></h2>
+        <form action="/add" method="post" class="orcamento-form">
+          <div class="mb-16 orcamento-cidade">
+            <label class="font-2-m mb-4" for="cidade">Cidade</label>
+            <input class="bg-b2 font-2-s" type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+          </div>
+          <div class="mb-16 orcamento-estado">
+            <label class="font-2-m mb-4" for="estado">Estado</label>
+            <select id="estadof" name="estado" class="bg-b2 font-2-s" required>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+          <div class="mb-16 orcamento-servicos">
+            <label class="font-2-m mb-4" for="servicos">Qual serviço você deseja adquirir?</label>
+            <select class="bg-b2 font-2-s" name="servicos" id="servicos" required>
+              <option value="energia-solar">Energia Solar</option>
+              <option value="energia-eolica">Energia Eólica</option>
+              <option value="energia-biomassa">Biomassa</option>
+              <option value="smart-power">Smart Power</option>
+              <option value="smart-grid">Smart Grid</option>
+              <option value="servicos-energia">Serviços de Energia</option>
+            </select>
+          </div>
+          <div class="mb-16 orcamento-descricao">
+            <label class="font-2-m mb-4" for="descricao">Descrição</label>
+            <textarea class="bg-b2 font-2-s" name="descricao" id="descricao" cols="30" rows="10" placeholder="Descreva sua necessidade aqui"></textarea>
+          </div>
+          <button type="submit" class="botao-escuro font-1-xs">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
   <footer class="bg-e7">
@@ -131,10 +131,10 @@
               <figure><img src="/public/assets/images/icones/linkedin.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">LinkedIn</p>
             </a></li>
-            <li class="mb-16"><a href="mailto:aton.energy@hotmail.com">
+          <li class="mb-16"><a href="mailto:aton.energy@hotmail.com">
               <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt=""></figure>
               <p class="font-2-l cor-branco">aton.energy</p>
-          </a></li>
+            </a></li>
           <li class="mb-16"><a href="#">
               <figure><img src="/public/assets/images/icones/facebook.svg" alt="" width="36" height="36"></figure>
               <p class="font-2-l cor-branco">Aton Energy</p>

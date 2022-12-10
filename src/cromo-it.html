@@ -469,7 +469,7 @@
       </div>
       <div>
         <p> Apague o Led aqui </p>
-        <p><a href="#"><button class="button buttonOff"> <span class="btnOff"> OFF </span> </button></a></p>
+        <p><a href="#"><button class="button buttonOff" data-button-apagar> <span class="btnOff"> OFF </span> </button></a></p>
       </div>
     </section>
 
@@ -530,9 +530,11 @@
 
   <script>
     let buttonsColor = document.querySelectorAll("[data-button]");
+    let buttonApagarTodos = document.querySelector("[data-button-apagar]")
     let color = [...buttonsColor].map(button => button.dataset.button);
 
-    function apagar() {
+    function apagar(event) {
+      event.preventDefault();
       buttonsColor.forEach(button => {
         const cor = button.classList[1];
         button.classList.remove(cor);
@@ -543,16 +545,18 @@
     }
 
     function mudarCor(index) {
-      apagar();
+      apagar(event);
       buttonsColor[index].classList.remove("buttonOff");
       buttonsColor[index].classList.add(color[index]);
       buttonsColor[index].children[0].innerText = "ON"
     }
 
+    buttonApagarTodos.addEventListener("click", apagar)
     buttonsColor.forEach((button, index) => button.addEventListener("click", (event) => {
       event.preventDefault();
       mudarCor(index)
-    }))
+    }));
+
   </script>
 
 

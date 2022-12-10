@@ -1,82 +1,74 @@
 .solucaoEspecifica-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
 }
 
 .solucaoEspecifica-grid-solucao {
-
-    display: grid;
-    grid-template-columns: 1f 1fr;
-    border: 4px solid #044F40;
-    border-radius: 5px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1f 1fr;
+  border: 4px solid #044f40;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .paines-solucao {
-
-    display: flex;
-    padding: 40px;
-    gap: 40px;
-    flex-direction: row;
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  flex-direction: row;
 }
-
 
 .sE-gridFoot-solucao-Desc p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 870px){
-    .paines-solucao {
-        flex-direction: column;
-        padding: 32px 16px;
-    }
-    .paines-solucao img {
-        max-width: none;
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        object-position: right;
-    }
-   
+@media (max-width: 870px) {
+  .paines-solucao {
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+  .paines-solucao img {
+    max-width: none;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: right;
+  }
 }
 
-@media(max-width: 750px) {
-
-.SE-Main-descricao{
+@media (max-width: 750px) {
+  .SE-Main-descricao {
     font: var(--font-2-m);
-}
+  }
 
+  .solucaoEspecifica-grid {
+    grid-template-columns: repeat(3, 320px);
+    gap: 20px;
+    overflow-y: scroll;
+  }
 
-    .solucaoEspecifica-grid {
-        grid-template-columns: repeat(3, 320px);
-        gap: 20px;
-        overflow-y: scroll;
+  .servicos-titulo {
+    position: relative;
+  }
 
-    }
+  .servicos > .servicos-titulo::after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/icones/arrow-right.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
 
-    .servicos-titulo {
-        position: relative;
-    }
-
-    .servicos > .servicos-titulo::after {
-        content: "";
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        background-image: url(../../images/icones/arrow-right.svg);
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 25px;
-        right: 30px;
-        color: rgba(0, 0, 0, 0.3);
-        animation: seta 0.5s ease-in 0s infinite alternate;
-    }
-
-    .solucaoEspecifica-grid img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-    }
+  .solucaoEspecifica-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
 }
