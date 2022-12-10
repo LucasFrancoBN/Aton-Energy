@@ -1,43 +1,69 @@
-
 .empresa {
-    display: flex;
-    
+  display: flex;
 }
 
 .empresa figure {
-    display: flex;
+  display: flex;
 }
 
 .empresa p {
-    max-width: 70ch;
+  max-width: 70ch;
+  margin-bottom: 20px;
 }
 
 .mvv {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
 }
 
 .mvv p {
-    max-width: 70ch;
+  max-width: 70ch;
 }
 .mvv li {
-    margin-left: 20px;
-    list-style-type: square;
+  margin-left: 20px;
+  list-style-type: square;
 }
 
 .ods {
-    display: flex;
+  display: flex;
+  gap: 40px;
 }
 
 .ods .desenvolvimento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003a2e;
+  border-radius: 4px;
+  padding: 0px 0px 20px 0px;
 }
 
 .desenvolvimento-pontos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
+span {
+  color: #003a2e;
+}
+
+.plano img {
+  object-fit: cover;
+  width: 150%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .ods {
+    flex-direction: column;
+  }
+  .empresa figure {
+    display: none;
+  }
+  .mvv {
+    display: flex;
+    flex-direction: column;
+  }
 }
