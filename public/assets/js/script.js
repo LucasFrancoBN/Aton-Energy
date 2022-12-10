@@ -1,5 +1,11 @@
-import initDropdown from "./modules/dropdown.js";
-import initMenuMobile from "./modules/menu-mobile.js";
+import DropDownMenu from "./modules/dropdown.js";
+import MenuMobile from "./modules/menu-mobile.js";
 
-initDropdown();
-initMenuMobile();
+const dropdown = new DropDownMenu("[data-dropdown]");
+dropdown.init();
+
+const menuMobile = new MenuMobile(
+  "[data-mobile='button']",
+  "[data-mobile='list']"
+);
+menuMobile.init();

@@ -104,9 +104,12 @@
     font: var(--font-1-m-b);
     order: -1;
   }
-  .js .solucoes:hover .dropdown,
-  .js .solucoes.ativo .dropdown {
+
+  .js .solucoes .dropdown,
+  .js .solucoes:hover .dropdown {
+    animation: none;
     position: static;
+    display: block;
     background-color: var(--cor-e8);
     color: var(--cor-branco);
     box-shadow: none;
