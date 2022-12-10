@@ -1,0 +1,43 @@
+.home-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+@media (max-width: 850px) {
+  figure img[src$="imagem-home.png"] {
+    height: 250px;
+    object-position: center;
+  }
+  .home-intro {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .home-intro-title {
+    font: var(--font-1-xl);
+    margin-bottom: var(--mb-24);
+  }
+  .home-intro figure {
+    order: -1;
+  }
+  .home-intro figure img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 680px) {
+  header + figure.mb-120 {
+    margin-bottom: var(--mb-60);
+  }
+}
+@media (max-width: 460px) {
+  .home-intro-desc p {
+    font: var(--font-2-s);
+    margin-bottom: var(--mb-8);
+  }
+  .home-intro-desc a.link {
+    margin-top: 16px;
+    font: var(--font-2-m-b);
+  }
+}

@@ -1,0 +1,146 @@
+.js .solucoes .dropdown,
+.js [data-investir] .dropdown {
+  display: none;
+}
+
+.js .solucoes:hover .dropdown,
+.js .solucoes.ativo .dropdown,
+[data-investir].ativo .dropdown {
+  animation: show-up 0.3s forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  position: absolute;
+}
+.js .solucoes:hover .dropdown,
+.js .solucoes.ativo .dropdown {
+  top: 42px;
+  left: 0;
+  width: 180px;
+}
+
+.js [data-investir].ativo .dropdown {
+  left: -1px;
+  top: 40px;
+  border: 1px solid #b1ddce;
+  border-top: none;
+  width: 134px;
+  border-radius: 0 0 5px 5px;
+}
+
+.js .solucoes .dropdown::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid var(--cor-e4);
+}
+
+.solucoes {
+  padding: 0.5rem;
+}
+
+.solucoes .dropdown li {
+  width: 100%;
+}
+
+.solucoes .dropdown a {
+  width: 100%;
+  padding: 1rem;
+}
+
+[data-investir] a {
+  padding: 0.5rem;
+}
+
+.header nav [data-investir] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  order: 1;
+}
+
+.header nav [data-investir] img {
+  max-width: 20px;
+}
+
+[data-investir] img {
+  transition: transform 0.3s;
+}
+
+[data-investir].ativo img {
+  transform: rotate(180deg);
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 850px) {
+  .js .solucoes:hover .dropdown,
+  .js .solucoes.ativo .dropdown {
+    top: 37px;
+  }
+  .js [data-investir].ativo .dropdown {
+    top: 35px;
+    width: 118px;
+  }
+}
+
+@media (max-width: 675px) {
+  .header nav [data-investir] {
+    font: var(--font-1-m-b);
+    order: -1;
+  }
+
+  .js .solucoes .dropdown,
+  .js .solucoes:hover .dropdown {
+    animation: none;
+    position: static;
+    display: block;
+    background-color: var(--cor-e8);
+    color: var(--cor-branco);
+    box-shadow: none;
+    width: 100px;
+    margin: 0.5rem 0;
+    color: var(--cor-e1);
+  }
+
+  .solucoes .dropdown a {
+    padding: 1rem 0;
+  }
+  .js .solucoes .dropdown::before {
+    border: none;
+  }
+
+  .js [data-investir].ativo .dropdown {
+    width: 134px;
+  }
+}
+
+@media (max-width: 395px) {
+  .header nav [data-investir] {
+    font: var(--font-1-xs-b);
+    gap: 5px;
+  }
+  .header nav [data-investir] img {
+    max-width: 15px;
+  }
+  .js [data-investir].ativo .dropdown {
+    width: 108px;
+    top: 34px;
+  }
+}

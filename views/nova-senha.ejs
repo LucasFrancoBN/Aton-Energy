@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#044F40">
+  <title>Aton Energy</title>
+  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./public/assets/images/icones/Favicon.svg" type="image/x-icon">
+
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<body>
+  <header class="bg-e7 mb-120">
+    <div class="container header">
+      <figure>
+        <a href="../index.html">
+          <img src="./public/assets/images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
+        </a>
+      </figure>
+      <nav>
+        <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="./public/assets/images/icones/chevron-down.svg" alt="seta">
+          <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li><a href="./login.html">Login</a></li>
+          </ul>
+        </button>
+        <div class="mobile-container">
+          <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
+          <ul id="menu" data-mobile="list">
+            <li class="font-1-m-b cor-e1"><a href="../sobre/sobre.html">Sobre</a></li>
+            <li class="solucoes font-1-m-b cor-e1" aria-expanded="false" aria-controls="solucoes" data-dropdown>
+              Soluções
+              <ul class="dropdown bg-e4 cor-e8 sombra" id="solucoes">
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Energia-Solar.html">Energia Solar</a></li>
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Energia-Eolica.html">Energia Eólica</a></li>
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Energia-Biomassa.html">Energia Biomassa</a></li>
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Smart-Power.html">SmartPower</a></li>
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Smart-Grid.html">SmartGrid</a></li>
+                <li class="font-1-xs"><a href="../Solucoes-Especificas/Serviços-Energia.html">Serviços de energia</a></li>
+              </ul>
+            </li>
+            <li class="font-1-m-b cor-e1"><a href="../sustentabilidade/sustentabilidade.html">Preservação</a></li>
+            <li class="font-1-m-b cor-e1"><a href="../Contato/Contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  
+
+  <article class="container mb-200">
+    <div class="bg-branco sombra form-container">
+      <h1 class="font-1-l mb-12">nova senha</h1>
+      <form action="">
+        <div class="mb-16">
+          <label class="font-2-m mb-4" for="nova-senha">Nova senha</label>
+          <input class="bg-b2 font-2-s" type="password" name="nova-senha" id="nova-senha" required placeholder="Nova Senha">
+        </div>
+        <div class="mb-24">
+          <label class="font-2-m mb-4" for="confirm">Confirme a senha</label>
+          <input class="bg-b2 font-2-s" type="password" name="confirm" id="confirm" required placeholder="Nova Senha">
+        </div>
+        <button class="botao-escuro font-2-s" type="submit">Enviar</button>
+      </form>
+    </div>
+  </article>
+
+
+
+
+
+
+  <footer class="bg-e7">
+    <figure class="container mb-8"><img src="./public/assets/images/Logo/logo.svg" alt="" width="158" height="66"></figure>
+    <div class="footer container">
+      <div class="footer-somos">
+        <div class="footer-somos-desc">
+          <h1 class="font-1-xxl mb-12 cor-e1">Quem Somos</h1>
+          <p class="font-2-l cor-e2">Aton Energy é uma empresa nacional que há mais de 30 anos desenvolve, fabrica e comercializa soluções em captação, distribuíção e armazento de energia renovável.</p>
+        </div>
+      </div>
+      <div class="footer-contatos">
+        <h1 class="font-1-xxl mb-12 cor-e1">Contatos</h1>
+        <ul>
+          <li class="mb-16"><a href="#">
+              <figure><img src="./public/assets/images/icones/linkedin.svg" alt=""></figure>
+              <p class="font-2-l cor-branco">LinkedIn</p>
+            </a></li>
+          <li class="mb-16"><a href="#">
+              <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt=""></figure>
+              <p class="font-2-l cor-branco">atonenergy2ind.br</p>
+            </a></li>
+          <li class="mb-16"><a href="#">
+              <figure><img src="./public/assets/images/icones/facebook.svg" alt=""></figure>
+              <p class="font-2-l cor-branco">Aton Energy</p>
+            </a></li>
+          <li class="mb-16"><a href="#">
+              <figure><img src="./public/assets/images/icones/instagram.svg" alt=""></figure>
+              <p class="font-2-l cor-branco">Aton Energy</p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/public/assets/js/script.js"></script>
+</body>
+
+</html>

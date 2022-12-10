@@ -1,0 +1,66 @@
+.conteudo p {
+  margin-bottom: 24px;
+}
+
+.conteudo figure {
+  object-fit: cover;
+  width: 100%;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-areas:
+    "img-sust-instal    texto1"
+    "texto2             img-sust-frota"
+    "img-sust-pessoas   texto3";
+  gap: 40px;
+}
+
+.conteudo .img-sust-instal {
+  grid-area: img-sust-instal;
+}
+.conteudo .texto1 {
+  grid-area: texto1;
+}
+.conteudo .img-sust-frot {
+  grid-area: img-sust-frota;
+}
+.conteudo .texto2 {
+  grid-area: texto2;
+}
+.conteudo .img-sust-pessoas {
+  grid-area: img-sust-pessoas;
+}
+.conteudo .texto3 {
+  grid-area: texto3;
+}
+
+.img-sust-frota img {
+  object-fit: fill;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .conteudo {
+    grid-template-areas:
+      "img-sust-instal"
+      "texto1"
+      "img-sust-frota"
+      "texto2"
+      "img-sust-pessoas"
+      "texto3";
+    gap: 40px;
+  }
+  .conteudo figure {
+    max-width: 100%;
+  }
+  .conteudo p {
+    font: var(--font-2-s);
+  }
+  h1 {
+    font: var(--font-1-m-b);
+  }
+  h2 {
+    font: var(--font-1-s);
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#044F40">
+
+    <meta name="description"
+        content="Página que vocÊ conseguirá enviar a sua dúvida sobre uma de nossas soluções ou até mesmo verificar aonde está localizada nossa loja fisica.">
+    <meta name="robots" content="noindex, follow">
+
+    <title>Aton Energy</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/public/assets/images/icones/Favicon.svg" type="image/x-icon">
+
+    <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<body>
+    <header class="bg-e7 mb-120">
+        <div class="container header">
+            <figure>
+                <a href="/usuario">
+                    <img src="/public/assets/images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
+                </a>
+            </figure>
+            <nav>
+                <ul>
+                    <li class="font-1-m-b cor-e1"><a href="/contate">Contato</a></li>
+                </ul>
+                <form action="/logout?_method=DELETE" method="post">
+                    <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mb-200">
+        <div class="descricao-usuario">
+            <h1 class="font-1-xxl mb-8"> Olá, <%= name %> </h1>
+            <p class="font-2-m mb-16">Seja bem vindo a sua área do cliente. Aqui você pode visualizar ou realizar um novo orçamento.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="link font-2-s-b mb-8" href="/posts">Orçamentos</a></li>
+                <li><a class="link font-2-s-b" href="/orcamento">Solicite seu orçamento</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <footer class="bg-e7">
+        <figure class="container mb-8"><img src="/public/assets/images/Logo/logo.svg" alt="" width="158" height="66"></figure>
+        <div class="footer container">
+            <div class="footer-somos">
+                <div class="footer-somos-desc">
+                    <h1 class="font-1-xxl mb-12 cor-e1">Quem Somos</h1>
+                    <p class="font-2-l cor-e2">Aton Energy é uma empresa nacional que há mais de 30 anos desenvolve,
+                        fabrica e comercializa soluções em captação, distribuíção e armazento de energia renovável.</p>
+                </div>
+            </div>
+            <div class="footer-contatos">
+                <h1 class="font-1-xxl mb-12 cor-e1">Contatos</h1>
+                <ul>
+                    <li class="mb-16"><a href="#">
+                        <figure><img src="/public/assets/images/icones/linkedin.svg" alt=""></figure>
+                        <p class="font-2-l cor-branco">LinkedIn</p>
+                      </a></li>
+                      <li class="mb-16"><a href="mailto:aton.energy@hotmail.com">
+                        <figure><img src="/public/assets/images/icones/envelope-fill.svg" alt=""></figure>
+                        <p class="font-2-l cor-branco">aton.energy</p>
+                    </a></li>
+                    <li class="mb-16"><a href="#">
+                        <figure><img src="/public/assets/images/icones/facebook.svg" alt=""></figure>
+                        <p class="font-2-l cor-branco">Aton Energy</p>
+                      </a></li>
+                    <li class="mb-16"><a href="#">
+                        <figure><img src="/public/assets/images/icones/instagram.svg" alt=""></figure>
+                        <p class="font-2-l cor-branco">Aton Energy</p>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/public/assets/js/script.js"></script>
+</body>
+
+</html>

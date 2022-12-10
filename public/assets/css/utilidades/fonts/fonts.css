@@ -1,0 +1,118 @@
+:root {
+  --font-titulo: 600 4rem/1.12 "Poppins", sans-serif;
+
+  --font-1-xxl: 600 3rem/1.12 "Poppins", sans-serif;
+
+  --font-1-xl: 600 2rem/1.12 "Poppins", sans-serif;
+
+  --font-1-l: 600 1.5rem/1.5 "Poppins", sans-serif;
+
+  --font-2-l: 400 1.5rem/1.5 "Roboto", sans-serif;
+
+  --font-2-l-b: 500 1.5rem/1.5 "Roboto", sans-serif;
+
+  --font-1-m: 500 1.125rem/1.5 "Poppins", sans-serif;
+
+  --font-1-m-b: 600 1.125rem/1.5 "Poppins", sans-serif;
+
+  --font-2-m: 400 1.125rem/1.5 "Roboto", sans-serif;
+
+  --font-2-m-b: 500 1.125rem/1.5 "Roboto", sans-serif;
+
+  --font-1-s: 500 1rem/1.5 "Poppins", sans-serif;
+
+  --font-2-s: 400 1rem/1.5 "Roboto", sans-serif;
+
+  --font-2-s-b: 500 1rem/1.5 "Roboto", sans-serif;
+
+  --font-1-xs: 500 0.875rem/1.5 "Poppins", sans-serif;
+
+  --font-1-xs-b: 600 0.875rem/1.5 "Poppins", sans-serif;
+
+  --font-2-xs: 400 0.875rem/1.5 "Roboto", sans-serif;
+
+  --font-1-xxs: 500 0.75rem/1.5 "Poppins", sans-serif;
+
+  --font-2-xxs: 400 0.75rem/1.5 "Roboto", sans-serif;
+
+  --font-1-xxxs: 500 0.625rem/1.5 "Poppins", sans-serif;
+
+  --font-2-xxxs: 400 0.625rem/1.5 "Roboto", sans-serif;
+}
+
+.font-1-titulo {
+  font: var(--font-titulo);
+}
+
+.font-1-xxl {
+  font: var(--font-1-xxl);
+}
+
+.font-1-xl {
+  font: var(--font-1-xl);
+}
+
+.font-1-l {
+  font: var(--font-1-l);
+}
+
+.font-2-l {
+  font: var(--font-2-l);
+}
+
+.font-2-l-b {
+  font: var(--font-2-l-b);
+}
+
+.font-1-m {
+  font: var(--font-1-m);
+}
+
+.font-1-m-b {
+  font: var(--font-1-m-b);
+}
+
+.font-2-m {
+  font: var(--font-2-m);
+}
+
+.font-2-m-b {
+  font: var(--font-2-m);
+}
+
+.font-1-s {
+  font: var(--font-1-s);
+}
+
+.font-2-s {
+  font: var(--font-2-s);
+}
+
+.font-2-s-b {
+  font: var(--font-2-s-b);
+}
+
+.font-1-xs {
+  font: var(--font-1-xs);
+}
+.font-2-xs {
+  font: var(--font-2-xs);
+}
+.font-1-xxs {
+  font: var(--font-1-xxs);
+}
+.font-2-xxs {
+  font: var(--font-2-xxs);
+}
+.font-1-xxxs {
+  font: var(--font-1-xxxs);
+}
+.font-2-xxxs {
+  font: var(--font-2-xxxs);
+}
+
+@media (max-width: 850px) {
+  .font-1-titulo {
+    font: var(--font-1-xxl);
+  }
+}
