@@ -15,7 +15,8 @@
 }
 .js .solucoes:hover .dropdown,
 .js .solucoes.ativo .dropdown {
-  top: 28px;
+  top: 42px;
+  left: 0;
   width: 180px;
 }
 
