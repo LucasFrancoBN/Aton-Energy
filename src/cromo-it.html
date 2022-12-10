@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CromoIT</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      max-width: 1235px;
+      margin: auto;
+      background-color: #F5F7FA;
+      color: #0B0C12;
+      font-size: 16px;
+      line-height: 24px;
+      border: 2px #CED3D950 solid;
+      border-radius: 5px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 5 0 25px 0;
+      border-bottom: 2px #CED3D950 solid;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    .logo h1 .C {
+      color: #2e79e2;
+    }
+
+    .logo h1 .I {
+      color: #9701FF;
+    }
+
+    .logo h1 .T {
+      color: #FF0E0E;
+    }
+
+    h1 {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    header nav {
+      display: flex;
+      align-items: center;
+    }
+
+    header nav ul {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+
+    nav ul li {
+      display: flex;
+      flex-shrink: 1;
+      flex-grow: 1;
+      align-items: center;
+    }
+
+    #lua {
+      display: none;
+    }
+
+    li i {
+      cursor: pointer;
+      font-size: 1.25em;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 4px 8px;
+      border: 2px #ced3d988 solid;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      border-radius: 3px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      color: #0B0C12;
+    }
+
+    main {
+      margin: 25px 0;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      margin-bottom: 2px;
+      font-family: 'Nunito';
+    }
+
+    p {
+      color: #4E4F52;
+    }
+
+    #testar {
+      margin-bottom: 15px
+    }
+
+    #botoes {
+      display: grid;
+      grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    }
+
+    #botoes div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 5px;
+    }
+
+    .video div {
+      margin-bottom: 10px;
+    }
+
+    .video input {
+      display: block;
+      margin: 5px 0;
+      padding: 5px;
+    }
+
+    p {
+      display: inline;
+    }
+
+    .buttonRed {
+      background: linear-gradient(360deg, #C60202 0%, #F74F2A 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonRed span {
+      background: linear-gradient(180deg, #7D1818 0%, #610909 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonGreen {
+      background: linear-gradient(360deg, #279227 0%, #6EC246 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonGreen span {
+      background: linear-gradient(360deg, #074607 0%, #3E7922 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonBlue {
+      background: linear-gradient(360deg, #0171E0 0%, #35AAFF 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonBlue span {
+      background: linear-gradient(360deg, #032140 0%, #2C6691 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonOrange {
+      background: linear-gradient(360deg, #F29900 0%, #FFCF0D 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonOrange span {
+      background: linear-gradient(180deg, #7B5D10 0%, #402E00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonMagenta {
+      background: linear-gradient(180deg, #C620F0 0%, #CA2DF1 0.01%, #A110D5 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonMagenta span {
+      background: linear-gradient(180deg, #6A177E 0%, #37004A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonYellow {
+      background: linear-gradient(180deg, #FFE81B 0%, #ECC602 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonYellow span {
+      background: linear-gradient(180deg, #978B1D 0%, #4B4400 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonWhite {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F3EFE8 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonWhite span {
+      background: linear-gradient(180deg, #484746 0%, #24221F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .buttonTurquesa {
+      background: linear-gradient(180deg, #21ECEC 0%, #08A6C9 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonTurquesa span {
+      background: linear-gradient(180deg, #135968 0%, #01262E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    input {
+      margin-top: 5px;
+      padding: 5px;
+    }
+
+    .buttonOff {
+      background: linear-gradient(360deg, #77878A 0%, #9AA7AA 100%);
+      border: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px #C0C5CC;
+      font-size: 2em;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+    }
+
+    .buttonOff span.btnOff {
+      background: linear-gradient(360deg, #F4F1EC 0%, #FFFFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 1235px) {
+      body {
+        margin: 8px 50px;
+        max-width: 720px;
+        font-size: 0.75em;
+      }
+    }
+
+    @media screen and (max-width: 785px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    @media screen and (max-width: 570px) {
+      header {
+        padding: 0 0 25px 0;
+      }
+
+      header nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #iframe {
+        width: 100%;
+        height: 207px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/LucasFrancoBN/CromoIT/8581d268c88dc32a13cef0227bd83f17710ca77d/Images/CromoIT.svg" alt="CromoIT">
+      <h1><span class="C">C</span>romo<span class="I">I</span><span class="T">T</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li id="sol"> <i class="fa-solid fa-sun"></i> </li>
+        <li id="lua"> <i class="fa-solid fa-moon"></i> </li>
+        <li><a href="#testar">VAMOS TESTAR? :D</a></li>
+        <li><a href="#proposito">PROPÓSITO</a></li>
+        <li><a href="#musica">MÚSICA</a></li>
+        <li><a href="#video">VÍDEO :D</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="sobre">Sobre nós</h2>
+      <p>
+        Somo um grupo da turma A de análise e desenvolvimento da FECAP e estamos fazendo esse projeto interdisciplinar.
+        Temos um total de 5 integrantes no grupo, cuja cada um deu diversas ideias sobre a realização desse mesmo e esse
+        é o resultado final que vocês estão vendo :D
+      </p>
+    </section>
+    <section>
+      <h2 id="proposito"> Nosso Propósito</h2>
+      <p>
+        Esse projeto foi pensado em como nós podemos melhorar a qualidade do nosso sono no geral, já que, nos dias atuais,
+        nós estamos tendo cada vez mais dificuldade de ter uma boa noite de sono, o que pode alterar todo o nosso humor
+        durante o dia, além de alterar a nossa produtividade.
+      </p>
+    </section>
+    <section>
+      <h2 id="integrantes">Integrantes</h2>
+      <p>Lucas Franco - 22023179</p>
+      <p>Glauber Vinicius - 22023179</p>
+      <p> Esdras Mendes - 22023179</p>
+      <p>Beatriz Candido - 22023179</p>
+      <p>Julya Joplin - 22023179</p>
+    </section>
+
+    <h2 id="testar">Vamos testar? :D</h2>
+    <section id="botoes">
+      <div>
+        <p>O Led vermelho está desligado</p>
+        <p>
+          <a href="#">
+            <button class="button buttonOff" data-button="buttonRed">
+              <span class="btnOff"> OFF </span>
+            </button>
+          </a>
+        </p>
+      </div>
+      <div>
+        <p>O Led verde está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonGreen"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led azul está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonBlue"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led laranja está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonOrange"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led magenta está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonMagenta"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led amarelo está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonYellow"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led branco está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonWhite"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>O Led turquesa está desligado</p>
+        <p><a href="#"><button class="button buttonOff" data-button="buttonTurquesa"> <span class="btnOff"> OFF </span></button></a></p>
+      </div>
+      <div>
+        <p>Esolha a cor que você deseja :D </p>
+        <p> <a href="#" id="change_color"><button class="button buttonOff"> <span class="btnOff"> Change Color </span> </button></a> </p> <input class="jscolor {onFineChange:'update(this)'}" id="rgb">
+      </div>
+      <div>
+        <p> Apague o Led aqui </p>
+        <p><a href="#"><button class="button buttonOff"> <span class="btnOff"> OFF </span> </button></a></p>
+      </div>
+    </section>
+
+    <section class="musica">
+      <div>
+        <h2>Música</h2>
+        <p>Nós recomendamos que você faça a cromoterapia em conjunto com uma playlist de música bem calma e leve, por isso separamos uma playlist para você :D</p>
+      </div>
+      <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/8748341082" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/35xI4hSJ8MdO1xkXwsd56a?utm_source=oembed" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+
+    <section class="video">
+      <div>
+        <h2>Vídeo</h2>
+        <p>Caso não tenha gostado da nossa playlist, coloque o link do youtube da música que você preferir aqui embaixo :D</p>
+      </div>
+      <iframe id="iframe" width="420" height="315" src="https://www.youtube.com/embed/9u8USeMyIwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <input type="url" name="url" id="urlInput" placeholder="Cole o link aqui">
+      <p><button id="btt" class="buttonOff"> <span class="btnOff"> Colocar video </span> </button></p>
+    </section>
+
+  </main>
+  <script src="https://kit.fontawesome.com/afc74ddb30.js" crossorigin="anonymous"></script>
+
+  <script>
+    let lua = document.querySelector("#lua");
+    let sol = document.querySelector("#sol");
+    let body = document.body;
+    let p = document.querySelectorAll("p");
+    let a = document.querySelectorAll("header nav a");
+    let buttons = document.querySelectorAll(".button")
+
+    function escurecer() {
+      body.style.backgroundColor = "#0B0C12";
+      body.style.color = "#F5F7FA";
+      a.forEach(link => link.style.color = "#F5F7FA");
+      p.forEach(paragrafo => paragrafo.style.color = "#9B9EA3");
+      buttons.forEach(button => button.style.boxShadow = "0px 2px 2px #242833");
+      sol.style.display = "none";
+      lua.style.display = "flex";
+    }
+
+    function clarear() {
+      body.style.backgroundColor = "#F5F7FA";
+      body.style.color = "#0B0C12";
+      a.forEach(link => link.style.color = "#0B0C12");
+      p.forEach(paragrafo => paragrafo.style.color = "#4E4F52");
+      buttons.forEach(button => button.style.boxShadow = "0px 2px 2px #989EA6");
+      sol.style.display = "flex";
+      lua.style.display = "none";
+    }
+
+    lua.addEventListener("click", clarear)
+    sol.addEventListener("click", escurecer)
+  </script>
+
+
+  <script>
+    let buttonsColor = document.querySelectorAll("[data-button]");
+    let color = [...buttonsColor].map(button => button.dataset.button);
+
+    function apagar() {
+      buttonsColor.forEach(button => {
+        const cor = button.classList[1];
+        button.classList.remove(cor);
+        button.children[0].innerText = "OFF";
+        button.classList.add("buttonOff");
+        button.children[0].classList.add("btnOff");
+      })
+    }
+
+    function mudarCor(index) {
+      apagar();
+      buttonsColor[index].classList.remove("buttonOff");
+      buttonsColor[index].classList.add(color[index]);
+      buttonsColor[index].children[0].innerText = "ON"
+    }
+
+    buttonsColor.forEach((button, index) => button.addEventListener("click", (event) => {
+      event.preventDefault();
+      mudarCor(index)
+    }))
+  </script>
+
+
+
+  <script>
+    let urlInput = document.querySelector("#urlInput");
+    let iframe = document.querySelector("#iframe");
+    let button = document.querySelector("#btt");
+
+    function mudarVideo() {
+      let id = urlInput.value;
+
+      if (id[29] == "?") { id = urlInput.value.split("?v=")[1]; } else { id = urlInput.value.split(".be/")[1]; }
+
+      let embedlink = "https://www.youtube.com/embed/" + id; //https://www.youtube.com/embed/sGbxmsDFVnE
+      iframe.src = embedlink;
+      console.log(id);
+    }
+
+    btt.addEventListener("click", mudarVideo);
+
+    //https://www.youtube.com/watch?v=DWyG4wqU0Tw
+    //https://www.youtube.com/embed/PHgc8Q6qTjc
+  </script>
+</body>
+
+</html>
