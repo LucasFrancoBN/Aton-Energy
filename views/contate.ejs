@@ -27,12 +27,9 @@
                 <img src="/public/assets/images/Logo/logo.svg" alt="Aton Energy" width="164" height="68">
             </figure>
             <nav>
-                <button data-investir class="font-1-m-b botao-claro sombra" aria-expanded="false" aria-controls="investir" data-dropdown>Invista <img src="/public/assets/images/icones/chevron-down.svg" alt="seta">
-                    <ul class="dropdown bg-e1 cor-e8 sombra" id="investir">
-                        <li><a href="/cadastro">Cadastrar</a></li>
-                        <li><a href="/login">Login</a></li>
-                    </ul>
-                </button>
+                <form action="/logout?_method=DELETE" method="post">
+                    <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+                </form>
                 <div class="mobile-container">
                     <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
                     <ul id="menu" data-mobile="list">

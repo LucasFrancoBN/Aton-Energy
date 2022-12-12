@@ -33,21 +33,18 @@
         </a>
       </figure>
       <nav>
-
-        </ul>
-        </button>
+        <form action="/logout?_method=DELETE" method="post">
+            <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
+        </form>
         <div class="mobile-container">
-          <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
-          <ul id="menu" data-mobile="list">
-            <li class="font-1-m-b cor-e1"><a href="/usuario">Home</a></li>
-            <li class="font-1-m-b cor-e1"><a href="/contate">Contato</a></li>
+            <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
+            <ul id="menu" data-mobile="list">
+            <li><a class="font-1-m-b cor-e1" href="/usuario">Home</a></li>
             <li><a class="font-1-m-b cor-e1" href="/posts">Orçamentos</a></li>
-            <form action="/logout?_method=DELETE" method="post">
-              <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
-            </form>
-          </ul>
+            <li><a class="font-1-m-b cor-e1" href="/contate">Contato</a></li>
+        </ul>
         </div>
-      </nav>
+    </nav>
     </div>
   </header>
   <section class="container mb-200">

@@ -14,5 +14,5 @@ const Post = db.sequelize.define('pedidos',{
     }
 })
 
-//Post.sync({force:true})
+// Post.sync({force:true})
 module.exports = Post

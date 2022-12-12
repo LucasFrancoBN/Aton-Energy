@@ -29,15 +29,17 @@
                 </a>
             </figure>
             <nav>
-                <ul>
-                    <li><a class="font-1-m-b cor-e1" href="/usuario">Home</a></li>
-                    <li><a class="font-1-m-b cor-e1" href="/orcamento">Orçamento</a></li>
-                    <li><a class="font-1-m-b cor-e1" href="/contate">Contato</a></li>
-                </ul>
-
                 <form action="/logout?_method=DELETE" method="post">
                     <button class="font-1-m-b botao-claro sombra" type="submit">Sair </button>
                 </form>
+                <div class="mobile-container">
+                    <button class="font-1-m cor-e1" aria-expanded="false" aria-controls="menu" data-mobile="button">Menu</button>
+                    <ul id="menu" data-mobile="list">
+                    <li><a class="font-1-m-b cor-e1" href="/usuario">Home</a></li>
+                    <li><a class="font-1-m-b cor-e1" href="/orcamento">Cadastro</a></li>
+                    <li><a class="font-1-m-b cor-e1" href="/contate">Contato</a></li>
+                </ul>
+                </div>
             </nav>
         </div>
     </header>
