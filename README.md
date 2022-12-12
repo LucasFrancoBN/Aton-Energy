@@ -15,19 +15,19 @@
 <!-- FOTOS -->
 <div id="fotos">
     <h2> 📸 Fotos </h2>
-        <img src="" alt="" style="width:750px">
+        <img src="./public/assets/images/readme/home.jpg" alt="" style="width:750px">
         <br><br>
        
  <h2> 📱 Responsivo </h2>
-    <img src="" alt="" style="width:250px">
-        <br><br>
-</div>
+ <img src="./public/assets/images/readme/mobile.png" alt="" style="width:250px">
+ <br><br>
+ <img src="./public/assets/images/readme/fold.png" alt="" style="width:250px">
 
 <!-- SOBRE -->
 <div id="sobre">
     <h2> 📝 Sobre o Projeto </h2> 
     <p> Aton Energy é uma empresa sustentável que traz soluções de energia limpa e renovável para outras empresas. </p>
-    <p> Neste projeto, nós podemos criar uma conta, enviar um formulário para o nosso banco de dados, ver os orçamentos que já foram cadastrados por você </p>
+    <p> Neste projeto, nós podemos criar uma conta (através do express-session), enviar um formulário para o nosso banco de dados (Sequelize e mySQL), ver os orçamentos que já foram cadastrados por você e deletar os mesmos </p>
     <p> Nas páginas de cadastro, login, usuario, e outras diversas; todas foram criadas com EJS e usamos o Express para fazer as rotas da mesma </p>
 
 </div>
