@@ -39,6 +39,10 @@
   padding: 0px 0px 20px 0px;
 }
 
+.desenvolvimento h2 {
+  padding: 0.75rem 0;
+}
+
 .desenvolvimento-pontos {
   display: grid;
   grid-template-columns: 1fr 1fr;
