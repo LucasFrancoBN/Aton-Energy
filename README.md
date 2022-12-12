@@ -15,13 +15,13 @@
 <!-- FOTOS -->
 <div id="fotos">
     <h2> 📸 Fotos </h2>
-        <img src="" alt="" style="width:750px">
+        <img src="./public/assets/images/readme/home.jpg" alt="" style="width:750px">
         <br><br>
        
  <h2> 📱 Responsivo </h2>
-    <img src="" alt="" style="width:250px">
-        <br><br>
-</div>
+ <img src="./public/assets/images/readme/mobile.png" alt="" style="width:250px">
+ <br><br>
+ <img src="./public/assets/images/readme/fold.png" alt="" style="width:250px">
 
 <!-- SOBRE -->
 <div id="sobre">
