@@ -6,9 +6,9 @@
  <h2> Sumário</h2>
  
  <a href="#fotos">Fotos</a> - 
-  <a href="#sobre">Sobre o Projeto</a> - 
+  <a href="#sobre">Sobre o Projeto</a> -
+  <a href="#inst">Instalação</a> - 
   <a href="#tec">Tecnologias</a>
-  <a href="#inst">Instalação</a>
 </div>
 <br>
 
