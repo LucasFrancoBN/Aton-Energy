@@ -37,7 +37,7 @@
   <h2>👨‍💻 Instalação</h2>
   <p> Para instalar esse projeto, você antes deve ter instaldo o mySQL Community e Node em sua máquina. </p>
   <p> Após instalados os dois itens citados, faça o download do zip aqui mesmo no github</p>
-  <img src="./public/assets/images/readme/download-zip.jpg" style="width:250px">
+  <img src="./public/assets/images/readme/download-zip.jpg" >
   <p> Agora faça a descompactação do mesmo, abra o seu terminal de comando, mude para o diretório em que o projeto está.  </p>
   <pre><code>cd nome-do-diretorio</code></pre>
   <p> Dê os seguintes comandos no seu terminal. </p>
